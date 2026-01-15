@@ -1,0 +1,28 @@
+---
+title: "Foundation for inference"
+---
+
+## Readings
+
+OpenIntro Statistics chapter 5
+
+## Assignments
+
+[Sampling Distribution Lab](/assignments/08_Sampling_Distributions.zip)
+
+## Additional Resources
+
+* [OpenIntro Statistics slides](https://github.com/jbryer/DATA606Fall2020/blob/master/Slides/OpenIntro/chp5.pdf)
+
+* [Why do we use 0.05 as a significance level?](https://www.openintro.org/stat/why05.php)
+
+
+### Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oLW_uzkPZGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A6_W8qY8zJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NVbPE1_Cbx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BqXgM-PCcls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

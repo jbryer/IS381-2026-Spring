@@ -1,0 +1,35 @@
+---
+title: "Textbooks"
+---
+
+
+<!-- R for Data Science -->
+
+<a href="https://r4ds.hadley.nz"><img src='/images/r4ds.jpg' alt='R for Data Science' align='left' style="height:125px; padding-left:10px; padding-right:10px;"/></a>
+</a>
+
+Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2025). *R for Data Science (2nd Ed).*
+
+> This is an open source textbook that [can be accessed on the web](https://r4ds.hadley.nz), or a printed copy can be ordered from [Amazon](https://www.amazon.com/Data-Science-Transform-Visualize-Model/dp/1492097403/ref=sr_1_1?crid=M79ETHG57G1L&dib=eyJ2IjoiMSJ9.Z1c-Zpi4mNudjpLRyuLhdiV-vmTQxsTksawK5qZqUgg7eerNQQSJqvZp3BkffxdM1ox_XNzTabFcY05ICFTkf9ncIVj_IEWz1rhWS2gil8nY-LPqz9c-dloObLA3FnLDg5WOQe992bNxxijiuIFnKK0Ey5QraCvJOh0cXEAbtlptBwb7o9NXvcvzUuFLoQAPthbWbSUmBMcqVkX2GsQLYhi_T3gUNKggad08D7zUCfs.VwIG-MY-f-HOH75xjof58egaEoy8hhNzLAZxBsV1lT4&dib_tag=se&keywords=r+for+data+science&qid=1741917409&sprefix=r+for+dat%2Caps%2C138&sr=8-1).
+
+
+-------------------------
+
+<!-- OpenIntro Statistics -->
+
+<a href = "resources/OpenIntroStatistics.pdf"><img src='/images/openintro.jpeg' alt='OpenIntro Statistics' align='left' style="height:125px; padding-left:10px; padding-right:10px;"/></a>
+
+Diez, D.M., Barr, C.D., & Çetinkaya-Rundel, M. (2019). *OpenIntro Statistics (4th Ed).* 
+
+> This is an open source textbook and can be downloaded in PDF format [here](resources/OpenIntroStatistics.pdf), from the [OpenIntro](http://www.openintro.org/stat/textbook.php) website, or a printed copy can be ordered from [Amazon](https://www.amazon.com/OpenIntro-Statistics-Fourth-David-Diez/dp/1943450072/ref=sr_1_2?keywords=openintro&qid=1563548071&s=gateway&sr=8-2).
+
+-------------------------
+
+<!-- Intro to Modern Statistics -->
+
+<a href="resources/imstat.pdf"><img src='/images/ims2.jpeg' alt='Introduction to Modern Statistics' align='left' style="height:125px; padding-left:10px; padding-right:10px;"/></a>
+
+Çetinkaya-Rundel, M, & Hardin, J (2024). *Introduction to Modern Statistics (2nd Ed).* 
+
+> This is an open source textbook and can be downloaded in PDF format [here](resources/imstat.pdf) or a printed copy can be ordered from [Amazon](https://www.amazon.com/Introduction-Modern-Statistics-Mine-Çetinkaya-Rundel/dp/1943450277/ref=sr_1_1?crid=8Z80FIY5Y84N&dib=eyJ2IjoiMSJ9.5UP82bqiJO5LqGMV5HHkZ5u8_zum7RH3UpJ8yYRccZiqALu3X5s67_sPBHL_D7iiSvXKZk6C1EeDFTkLYcXo_h4V3I4q8J3fgIAF3EwNbqlkXMjei87TkQ_H4Ol4G4Cj0Eq7L86QD3IFEq6jPy-w6ZpRQDPyyLkfy3IeVsfiUNT_a2JydSg9SG4Omu9p9Bwar0-WE5nPNzmNM3vQSoV_8bRUZqqzZygmar-zmWcRyww.cN-zWvbyMY7n8zt5EZADPefn4NbyJaEGzdArznuS5F4&dib_tag=se&keywords=intro+to+modern+statistics&qid=1741917247&sprefix=intro+to+modern+statistics%2Caps%2C126&sr=8-1).
+

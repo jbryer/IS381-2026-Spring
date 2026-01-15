@@ -1,0 +1,25 @@
+---
+title: "Distributions"
+---
+
+## Readings
+
+OpenIntro Statistics chapter 4
+
+## Assignments
+
+[Distributions Lab](/assignments/07_Distributions.zip)
+
+## Additional Resources
+
+* [OpenIntro Statistics slides](https://github.com/jbryer/DATA606Fall2020/blob/master/Slides/OpenIntro/chp4.pdf)
+
+### Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S_p5D-YXLS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/smJBsZ4YQZw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tKmyzhvgudw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VvksxAZAlrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
