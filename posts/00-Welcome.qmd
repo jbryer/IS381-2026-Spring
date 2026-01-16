@@ -14,7 +14,7 @@ meetup_image(out_file = '00-welcome.png',
 ```
 
 
-Welcome to IS38! Couple of important notes as you get started:
+Welcome to IS381! Couple of important notes as you get started:
 
 * Complete this [Google Form](`r formative_assessment`) as soon as possible. I will use some of the data (in aggregate) in the meetup.
 
