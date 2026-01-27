@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/01-Intro_to_the_Course.html",
       "/posts/00-Welcome.html"
     ]
   }

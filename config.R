@@ -3,7 +3,7 @@ year <- 2026
 semester <- 'Spring'
 course <- 'IS381'
 class_day <- 'Monday'
-class_time <- '5:30pm to 6:30pm'
+class_time <- '6:30pm to 7:30pm'
 instructor <- 'Jason Bryer, Ph.D.'
 instructor_email <- 'jason.bryer@cuny.edu'
 description <- paste0(course, ' Statistics and Probability with R ', semester, ' ', year)
