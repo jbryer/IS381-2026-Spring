@@ -73,603 +73,21 @@
     ]
   },
   {
-    "objectID": "posts/00-Welcome.html",
-    "href": "posts/00-Welcome.html",
-    "title": "Welcome to IS381!",
+    "objectID": "posts/01-Intro_to_the_Course.html",
+    "href": "posts/01-Intro_to_the_Course.html",
+    "title": "Intro to the Course",
     "section": "",
-    "text": "Welcome to IS381! Couple of important notes as you get started:\n\nComplete this Google Form as soon as possible. I will use some of the data (in aggregate) in the meetup.\nJoin the Slack channel by clicking here (or use your @sps.cuny.edu email address). This will be our primary mode of communication.\nFor private communications, you can either send private Slack messages or email me at jason.bryer@cuny.edu.\nComplete the self-regulated learning assessment in DAACS. Visit cuny.daacs.net and sign-in using your CUNY account.\nOur Meetups will be on Monday from 6:30pm to 7:30pm. I expect everyone to attend or watch the Meetups. Important information will be shared during the meetups that will not be available in any other format.\n\nI am looking forward to getting to know everyone and a fantastic semester! Good luck!"
+    "text": "Click here to open the slides."
   },
   {
-    "objectID": "modules/14-Module.html",
-    "href": "modules/14-Module.html",
-    "title": "Correlation",
+    "objectID": "modules/15-Module.html",
+    "href": "modules/15-Module.html",
+    "title": "Wrap up / Final Presentations",
     "section": "",
-    "text": "Intro to Modern Statistics chapter 7.1",
+    "text": "Congratulations! You made it through IS381. This week you present your final project.",
     "crumbs": [
       "Topics",
-      "14 - Correlation"
-    ]
-  },
-  {
-    "objectID": "modules/14-Module.html#readings",
-    "href": "modules/14-Module.html#readings",
-    "title": "Correlation",
-    "section": "",
-    "text": "Intro to Modern Statistics chapter 7.1",
-    "crumbs": [
-      "Topics",
-      "14 - Correlation"
-    ]
-  },
-  {
-    "objectID": "modules/14-Module.html#assignments",
-    "href": "modules/14-Module.html#assignments",
-    "title": "Correlation",
-    "section": "Assignments",
-    "text": "Assignments\nCorrelation Lab",
-    "crumbs": [
-      "Topics",
-      "14 - Correlation"
-    ]
-  },
-  {
-    "objectID": "modules/14-Module.html#additional-resources",
-    "href": "modules/14-Module.html#additional-resources",
-    "title": "Correlation",
-    "section": "Additional Resources",
-    "text": "Additional Resources",
-    "crumbs": [
-      "Topics",
-      "14 - Correlation"
-    ]
-  },
-  {
-    "objectID": "modules/12-Module.html",
-    "href": "modules/12-Module.html",
-    "title": "Inference for Numerical Data",
-    "section": "",
-    "text": "OpenIntro Statistics chapter 7",
-    "crumbs": [
-      "Topics",
-      "12 - Inference for numerical data"
-    ]
-  },
-  {
-    "objectID": "modules/12-Module.html#readings",
-    "href": "modules/12-Module.html#readings",
-    "title": "Inference for Numerical Data",
-    "section": "",
-    "text": "OpenIntro Statistics chapter 7",
-    "crumbs": [
-      "Topics",
-      "12 - Inference for numerical data"
-    ]
-  },
-  {
-    "objectID": "modules/12-Module.html#assignments",
-    "href": "modules/12-Module.html#assignments",
-    "title": "Inference for Numerical Data",
-    "section": "Assignments",
-    "text": "Assignments\nInference for Numerical Data Lab",
-    "crumbs": [
-      "Topics",
-      "12 - Inference for numerical data"
-    ]
-  },
-  {
-    "objectID": "modules/12-Module.html#additional-resources",
-    "href": "modules/12-Module.html#additional-resources",
-    "title": "Inference for Numerical Data",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nOpenIntro Statistics slides\n\n\nVideos",
-    "crumbs": [
-      "Topics",
-      "12 - Inference for numerical data"
-    ]
-  },
-  {
-    "objectID": "modules/10-Module.html",
-    "href": "modules/10-Module.html",
-    "title": "Inference for Proportions",
-    "section": "",
-    "text": "OpenIntro Statistics chapter 6",
-    "crumbs": [
-      "Topics",
-      "10 - Inference for proportions"
-    ]
-  },
-  {
-    "objectID": "modules/10-Module.html#readings",
-    "href": "modules/10-Module.html#readings",
-    "title": "Inference for Proportions",
-    "section": "",
-    "text": "OpenIntro Statistics chapter 6",
-    "crumbs": [
-      "Topics",
-      "10 - Inference for proportions"
-    ]
-  },
-  {
-    "objectID": "modules/10-Module.html#assignments",
-    "href": "modules/10-Module.html#assignments",
-    "title": "Inference for Proportions",
-    "section": "Assignments",
-    "text": "Assignments\nInference for Proportions Lab",
-    "crumbs": [
-      "Topics",
-      "10 - Inference for proportions"
-    ]
-  },
-  {
-    "objectID": "modules/10-Module.html#additional-resources",
-    "href": "modules/10-Module.html#additional-resources",
-    "title": "Inference for Proportions",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nOpenIntro Statistics slides\n\n\nVideos",
-    "crumbs": [
-      "Topics",
-      "10 - Inference for proportions"
-    ]
-  },
-  {
-    "objectID": "modules/08-Module.html",
-    "href": "modules/08-Module.html",
-    "title": "Foundation for inference",
-    "section": "",
-    "text": "OpenIntro Statistics chapter 5",
-    "crumbs": [
-      "Topics",
-      "8 - Foundation for inference"
-    ]
-  },
-  {
-    "objectID": "modules/08-Module.html#readings",
-    "href": "modules/08-Module.html#readings",
-    "title": "Foundation for inference",
-    "section": "",
-    "text": "OpenIntro Statistics chapter 5",
-    "crumbs": [
-      "Topics",
-      "8 - Foundation for inference"
-    ]
-  },
-  {
-    "objectID": "modules/08-Module.html#assignments",
-    "href": "modules/08-Module.html#assignments",
-    "title": "Foundation for inference",
-    "section": "Assignments",
-    "text": "Assignments\nSampling Distribution Lab",
-    "crumbs": [
-      "Topics",
-      "8 - Foundation for inference"
-    ]
-  },
-  {
-    "objectID": "modules/08-Module.html#additional-resources",
-    "href": "modules/08-Module.html#additional-resources",
-    "title": "Foundation for inference",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nOpenIntro Statistics slides\nWhy do we use 0.05 as a significance level?\n\n\nVideos",
-    "crumbs": [
-      "Topics",
-      "8 - Foundation for inference"
-    ]
-  },
-  {
-    "objectID": "modules/06-Module.html",
-    "href": "modules/06-Module.html",
-    "title": "Probability",
-    "section": "",
-    "text": "OpenIntro Statistics chapter 3",
-    "crumbs": [
-      "Topics",
-      "6 - Probability"
-    ]
-  },
-  {
-    "objectID": "modules/06-Module.html#readings",
-    "href": "modules/06-Module.html#readings",
-    "title": "Probability",
-    "section": "",
-    "text": "OpenIntro Statistics chapter 3",
-    "crumbs": [
-      "Topics",
-      "6 - Probability"
-    ]
-  },
-  {
-    "objectID": "modules/06-Module.html#assignments",
-    "href": "modules/06-Module.html#assignments",
-    "title": "Probability",
-    "section": "Assignments",
-    "text": "Assignments\nProbability Lab",
-    "crumbs": [
-      "Topics",
-      "6 - Probability"
-    ]
-  },
-  {
-    "objectID": "modules/06-Module.html#additional-resources",
-    "href": "modules/06-Module.html#additional-resources",
-    "title": "Probability",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nOpenIntro Statistics slides\nMatloff, N. (2009). From Algorithms to Z-Scores: Probabilistic and Statistical Modeling in Computer Science. Available from http://heather.cs.ucdavis.edu/probstatbook.\n\n\nVideos\nProbability Introduction\n\n\nWould You Take This Bet?\n\n\nThe Monty Hall Problem",
-    "crumbs": [
-      "Topics",
-      "6 - Probability"
-    ]
-  },
-  {
-    "objectID": "modules/04-Module.html",
-    "href": "modules/04-Module.html",
-    "title": "Data visualization with ggplot2",
-    "section": "",
-    "text": "R for Data Science chapters 1, 9, and 10.",
-    "crumbs": [
-      "Topics",
-      "4 - Reshaping data"
-    ]
-  },
-  {
-    "objectID": "modules/04-Module.html#readings",
-    "href": "modules/04-Module.html#readings",
-    "title": "Data visualization with ggplot2",
-    "section": "",
-    "text": "R for Data Science chapters 1, 9, and 10.",
-    "crumbs": [
-      "Topics",
-      "4 - Reshaping data"
-    ]
-  },
-  {
-    "objectID": "modules/04-Module.html#assignments",
-    "href": "modules/04-Module.html#assignments",
-    "title": "Data visualization with ggplot2",
-    "section": "Assignments",
-    "text": "Assignments\nData visualizaiton lab",
-    "crumbs": [
-      "Topics",
-      "4 - Reshaping data"
-    ]
-  },
-  {
-    "objectID": "modules/04-Module.html#additional-resources",
-    "href": "modules/04-Module.html#additional-resources",
-    "title": "Data visualization with ggplot2",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nggplot2 documentation website\nggplot2 cheatsheet\nggplot2 book",
-    "crumbs": [
-      "Topics",
-      "4 - Reshaping data"
-    ]
-  },
-  {
-    "objectID": "modules/02-Module.html",
-    "href": "modules/02-Module.html",
-    "title": "R coding basics",
-    "section": "",
-    "text": "R four Data Science chapter 2 and chapter 3",
-    "crumbs": [
-      "Topics",
-      "2 - R coding basics"
-    ]
-  },
-  {
-    "objectID": "modules/02-Module.html#readings",
-    "href": "modules/02-Module.html#readings",
-    "title": "R coding basics",
-    "section": "",
-    "text": "R four Data Science chapter 2 and chapter 3",
-    "crumbs": [
-      "Topics",
-      "2 - R coding basics"
-    ]
-  },
-  {
-    "objectID": "modules/02-Module.html#assignments",
-    "href": "modules/02-Module.html#assignments",
-    "title": "R coding basics",
-    "section": "Assignments",
-    "text": "Assignments\nR Coding Basics",
-    "crumbs": [
-      "Topics",
-      "2 - R coding basics"
-    ]
-  },
-  {
-    "objectID": "modules/02-Module.html#additional-resources",
-    "href": "modules/02-Module.html#additional-resources",
-    "title": "R coding basics",
-    "section": "Additional Resources",
-    "text": "Additional Resources",
-    "crumbs": [
-      "Topics",
-      "2 - R coding basics"
-    ]
-  },
-  {
-    "objectID": "instructor.html",
-    "href": "instructor.html",
-    "title": "Instructor",
-    "section": "",
-    "text": "Jason Bryer, Ph.D.\nEmail: jason.bryer@cuny.edu\nI am currently an Assistant Professor in Data Science and Information Systems at the City University of New York. Additionally, I am a consultant with Cornell University where he has developed a research and data collection platform for New York State’s Office of Special Education (https://data.osepartnership.org). Prior to joining CUNY, I was Executive Director at Excelsior College where he has served as Principal Investigator of the FIPSE First in the World grant to develop and research the Diagnostic Assessment and Achievement of College Skills along with supporting research and evaluation of other grants at the institution. My research interests include quasi-experimental designs with an emphasis in propensity score analysis, data systems to support formative assessment, and the use of open source software for conducting reproducible research. I have authored of over a dozen R packages, including three related to conducting propensity score analyses. When I’m not crunching numbers, I am a photographer and proud dad to three boys.\n\nContact\nOffice Hours (Zoom is preferred): By appointment. You’re encouraged to schedule an appointment and I have time nearly everyday. You are also encouraged to ask us questions on Slack. If you wish to ask a question in private, you can email me directly.\nFor the most part, you can expect me to respond to questions by email within 24 hours. If you do not hear back from me within 48 hours of sending an email, please resend your message. I will be checking in on the course regularly, just about every day and likely several times each day. Please do not hesitate to ask if you have questions or concerns.",
-    "crumbs": [
-      "Course information",
-      "Instructor"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Announcements",
-    "section": "",
-    "text": "Be sure to check this page regularly for updates. In addition to periodic updates about the course, slides and recordings of the weekly meetups will be posted here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntro to the Course\n\n\nSlides and recording for the Intro to the Course meetup.\n\n\n\n\n\nJan 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to IS381!\n\n\nImportant information on how to get started with this course. Please read this post carefully.\n\n\n\n\n\nJan 15, 2026\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Announcements"
-    ]
-  },
-  {
-    "objectID": "modules/01-Module.html",
-    "href": "modules/01-Module.html",
-    "title": "Introduction to R and RStudio",
-    "section": "",
-    "text": "The first thing you should do for this class is install R and RStudio. The software page has directions for install R and RStudio.",
-    "crumbs": [
-      "Topics",
-      "1 - Introduction to R and RStudio"
-    ]
-  },
-  {
-    "objectID": "modules/01-Module.html#readings",
-    "href": "modules/01-Module.html#readings",
-    "title": "Introduction to R and RStudio",
-    "section": "Readings",
-    "text": "Readings\nR for Data Science introduction and chapter 27.",
-    "crumbs": [
-      "Topics",
-      "1 - Introduction to R and RStudio"
-    ]
-  },
-  {
-    "objectID": "modules/01-Module.html#assignments",
-    "href": "modules/01-Module.html#assignments",
-    "title": "Introduction to R and RStudio",
-    "section": "Assignments",
-    "text": "Assignments\nIntro to R Lab",
-    "crumbs": [
-      "Topics",
-      "1 - Introduction to R and RStudio"
-    ]
-  },
-  {
-    "objectID": "modules/01-Module.html#additional-resources",
-    "href": "modules/01-Module.html#additional-resources",
-    "title": "Introduction to R and RStudio",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nThis talk by Jenny Bryan from the 2020 RStudio::conf provides some great advise and strategies on how to handle errors in R.",
-    "crumbs": [
-      "Topics",
-      "1 - Introduction to R and RStudio"
-    ]
-  },
-  {
-    "objectID": "modules/03-Module.html",
-    "href": "modules/03-Module.html",
-    "title": "Data (importing and structure)",
-    "section": "",
-    "text": "R for Data Science chapter 7",
-    "crumbs": [
-      "Topics",
-      "3 - Data (importing and structure)"
-    ]
-  },
-  {
-    "objectID": "modules/03-Module.html#readings",
-    "href": "modules/03-Module.html#readings",
-    "title": "Data (importing and structure)",
-    "section": "",
-    "text": "R for Data Science chapter 7",
-    "crumbs": [
-      "Topics",
-      "3 - Data (importing and structure)"
-    ]
-  },
-  {
-    "objectID": "modules/03-Module.html#assignments",
-    "href": "modules/03-Module.html#assignments",
-    "title": "Data (importing and structure)",
-    "section": "Assignments",
-    "text": "Assignments\nData importing and structore lab",
-    "crumbs": [
-      "Topics",
-      "3 - Data (importing and structure)"
-    ]
-  },
-  {
-    "objectID": "modules/03-Module.html#additional-resources",
-    "href": "modules/03-Module.html#additional-resources",
-    "title": "Data (importing and structure)",
-    "section": "Additional Resources",
-    "text": "Additional Resources",
-    "crumbs": [
-      "Topics",
-      "3 - Data (importing and structure)"
-    ]
-  },
-  {
-    "objectID": "modules/05-Module.html",
-    "href": "modules/05-Module.html",
-    "title": "Reshaping Data",
-    "section": "",
-    "text": "R for Data Science chapter 3 and the transform section.",
-    "crumbs": [
-      "Topics",
-      "5 - Data visualization with ggplot2"
-    ]
-  },
-  {
-    "objectID": "modules/05-Module.html#readings",
-    "href": "modules/05-Module.html#readings",
-    "title": "Reshaping Data",
-    "section": "",
-    "text": "R for Data Science chapter 3 and the transform section.",
-    "crumbs": [
-      "Topics",
-      "5 - Data visualization with ggplot2"
-    ]
-  },
-  {
-    "objectID": "modules/05-Module.html#assignments",
-    "href": "modules/05-Module.html#assignments",
-    "title": "Reshaping Data",
-    "section": "Assignments",
-    "text": "Assignments\nReshaping Data Lab",
-    "crumbs": [
-      "Topics",
-      "5 - Data visualization with ggplot2"
-    ]
-  },
-  {
-    "objectID": "modules/05-Module.html#additional-resources",
-    "href": "modules/05-Module.html#additional-resources",
-    "title": "Reshaping Data",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\ndplyr cheatsheet\ndplyr website",
-    "crumbs": [
-      "Topics",
-      "5 - Data visualization with ggplot2"
-    ]
-  },
-  {
-    "objectID": "modules/07-Module.html",
-    "href": "modules/07-Module.html",
-    "title": "Distributions",
-    "section": "",
-    "text": "OpenIntro Statistics chapter 4",
-    "crumbs": [
-      "Topics",
-      "7 - Distributions"
-    ]
-  },
-  {
-    "objectID": "modules/07-Module.html#readings",
-    "href": "modules/07-Module.html#readings",
-    "title": "Distributions",
-    "section": "",
-    "text": "OpenIntro Statistics chapter 4",
-    "crumbs": [
-      "Topics",
-      "7 - Distributions"
-    ]
-  },
-  {
-    "objectID": "modules/07-Module.html#assignments",
-    "href": "modules/07-Module.html#assignments",
-    "title": "Distributions",
-    "section": "Assignments",
-    "text": "Assignments\nDistributions Lab",
-    "crumbs": [
-      "Topics",
-      "7 - Distributions"
-    ]
-  },
-  {
-    "objectID": "modules/07-Module.html#additional-resources",
-    "href": "modules/07-Module.html#additional-resources",
-    "title": "Distributions",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nOpenIntro Statistics slides\n\n\nVideos",
-    "crumbs": [
-      "Topics",
-      "7 - Distributions"
-    ]
-  },
-  {
-    "objectID": "modules/09-Module.html",
-    "href": "modules/09-Module.html",
-    "title": "Central limit theorem",
-    "section": "",
-    "text": "Intro to Modern Statistics chapter 13",
-    "crumbs": [
-      "Topics",
-      "9 - Central limit theorem"
-    ]
-  },
-  {
-    "objectID": "modules/09-Module.html#readings",
-    "href": "modules/09-Module.html#readings",
-    "title": "Central limit theorem",
-    "section": "",
-    "text": "Intro to Modern Statistics chapter 13",
-    "crumbs": [
-      "Topics",
-      "9 - Central limit theorem"
-    ]
-  },
-  {
-    "objectID": "modules/09-Module.html#assignments",
-    "href": "modules/09-Module.html#assignments",
-    "title": "Central limit theorem",
-    "section": "Assignments",
-    "text": "Assignments\nConfidence Intervals Lab",
-    "crumbs": [
-      "Topics",
-      "9 - Central limit theorem"
-    ]
-  },
-  {
-    "objectID": "modules/09-Module.html#additional-resources",
-    "href": "modules/09-Module.html#additional-resources",
-    "title": "Central limit theorem",
-    "section": "Additional Resources",
-    "text": "Additional Resources",
-    "crumbs": [
-      "Topics",
-      "9 - Central limit theorem"
-    ]
-  },
-  {
-    "objectID": "modules/11-Module.html",
-    "href": "modules/11-Module.html",
-    "title": "Inference for Two-Way Tables",
-    "section": "",
-    "text": "Intro to Modern Statistics",
-    "crumbs": [
-      "Topics",
-      "11 - Inference for two-way tables"
-    ]
-  },
-  {
-    "objectID": "modules/11-Module.html#readings",
-    "href": "modules/11-Module.html#readings",
-    "title": "Inference for Two-Way Tables",
-    "section": "",
-    "text": "Intro to Modern Statistics",
-    "crumbs": [
-      "Topics",
-      "11 - Inference for two-way tables"
-    ]
-  },
-  {
-    "objectID": "modules/11-Module.html#assignments",
-    "href": "modules/11-Module.html#assignments",
-    "title": "Inference for Two-Way Tables",
-    "section": "Assignments",
-    "text": "Assignments\nChi-Squared Lab",
-    "crumbs": [
-      "Topics",
-      "11 - Inference for two-way tables"
-    ]
-  },
-  {
-    "objectID": "modules/11-Module.html#additional-resources",
-    "href": "modules/11-Module.html#additional-resources",
-    "title": "Inference for Two-Way Tables",
-    "section": "Additional Resources",
-    "text": "Additional Resources",
-    "crumbs": [
-      "Topics",
-      "11 - Inference for two-way tables"
+      "15 - Wrap up / Final Presentations"
     ]
   },
   {
@@ -717,20 +135,609 @@
     ]
   },
   {
-    "objectID": "modules/15-Module.html",
-    "href": "modules/15-Module.html",
-    "title": "Wrap up / Final Presentations",
+    "objectID": "modules/11-Module.html",
+    "href": "modules/11-Module.html",
+    "title": "Inference for Two-Way Tables",
     "section": "",
-    "text": "Congratulations! You made it through IS381. This week you present your final project.",
+    "text": "Intro to Modern Statistics",
     "crumbs": [
       "Topics",
-      "15 - Wrap up / Final Presentations"
+      "11 - Inference for two-way tables"
     ]
   },
   {
-    "objectID": "posts/01-Intro_to_the_Course.html",
-    "href": "posts/01-Intro_to_the_Course.html",
-    "title": "Intro to the Course",
+    "objectID": "modules/11-Module.html#readings",
+    "href": "modules/11-Module.html#readings",
+    "title": "Inference for Two-Way Tables",
+    "section": "",
+    "text": "Intro to Modern Statistics",
+    "crumbs": [
+      "Topics",
+      "11 - Inference for two-way tables"
+    ]
+  },
+  {
+    "objectID": "modules/11-Module.html#assignments",
+    "href": "modules/11-Module.html#assignments",
+    "title": "Inference for Two-Way Tables",
+    "section": "Assignments",
+    "text": "Assignments\nChi-Squared Lab",
+    "crumbs": [
+      "Topics",
+      "11 - Inference for two-way tables"
+    ]
+  },
+  {
+    "objectID": "modules/11-Module.html#additional-resources",
+    "href": "modules/11-Module.html#additional-resources",
+    "title": "Inference for Two-Way Tables",
+    "section": "Additional Resources",
+    "text": "Additional Resources",
+    "crumbs": [
+      "Topics",
+      "11 - Inference for two-way tables"
+    ]
+  },
+  {
+    "objectID": "modules/09-Module.html",
+    "href": "modules/09-Module.html",
+    "title": "Central limit theorem",
+    "section": "",
+    "text": "Intro to Modern Statistics chapter 13",
+    "crumbs": [
+      "Topics",
+      "9 - Central limit theorem"
+    ]
+  },
+  {
+    "objectID": "modules/09-Module.html#readings",
+    "href": "modules/09-Module.html#readings",
+    "title": "Central limit theorem",
+    "section": "",
+    "text": "Intro to Modern Statistics chapter 13",
+    "crumbs": [
+      "Topics",
+      "9 - Central limit theorem"
+    ]
+  },
+  {
+    "objectID": "modules/09-Module.html#assignments",
+    "href": "modules/09-Module.html#assignments",
+    "title": "Central limit theorem",
+    "section": "Assignments",
+    "text": "Assignments\nConfidence Intervals Lab",
+    "crumbs": [
+      "Topics",
+      "9 - Central limit theorem"
+    ]
+  },
+  {
+    "objectID": "modules/09-Module.html#additional-resources",
+    "href": "modules/09-Module.html#additional-resources",
+    "title": "Central limit theorem",
+    "section": "Additional Resources",
+    "text": "Additional Resources",
+    "crumbs": [
+      "Topics",
+      "9 - Central limit theorem"
+    ]
+  },
+  {
+    "objectID": "modules/07-Module.html",
+    "href": "modules/07-Module.html",
+    "title": "Distributions",
+    "section": "",
+    "text": "OpenIntro Statistics chapter 4",
+    "crumbs": [
+      "Topics",
+      "7 - Distributions"
+    ]
+  },
+  {
+    "objectID": "modules/07-Module.html#readings",
+    "href": "modules/07-Module.html#readings",
+    "title": "Distributions",
+    "section": "",
+    "text": "OpenIntro Statistics chapter 4",
+    "crumbs": [
+      "Topics",
+      "7 - Distributions"
+    ]
+  },
+  {
+    "objectID": "modules/07-Module.html#assignments",
+    "href": "modules/07-Module.html#assignments",
+    "title": "Distributions",
+    "section": "Assignments",
+    "text": "Assignments\nDistributions Lab",
+    "crumbs": [
+      "Topics",
+      "7 - Distributions"
+    ]
+  },
+  {
+    "objectID": "modules/07-Module.html#additional-resources",
+    "href": "modules/07-Module.html#additional-resources",
+    "title": "Distributions",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nOpenIntro Statistics slides\n\n\nVideos",
+    "crumbs": [
+      "Topics",
+      "7 - Distributions"
+    ]
+  },
+  {
+    "objectID": "modules/05-Module.html",
+    "href": "modules/05-Module.html",
+    "title": "Reshaping Data",
+    "section": "",
+    "text": "R for Data Science chapter 3 and the transform section.",
+    "crumbs": [
+      "Topics",
+      "5 - Data visualization with ggplot2"
+    ]
+  },
+  {
+    "objectID": "modules/05-Module.html#readings",
+    "href": "modules/05-Module.html#readings",
+    "title": "Reshaping Data",
+    "section": "",
+    "text": "R for Data Science chapter 3 and the transform section.",
+    "crumbs": [
+      "Topics",
+      "5 - Data visualization with ggplot2"
+    ]
+  },
+  {
+    "objectID": "modules/05-Module.html#assignments",
+    "href": "modules/05-Module.html#assignments",
+    "title": "Reshaping Data",
+    "section": "Assignments",
+    "text": "Assignments\nReshaping Data Lab",
+    "crumbs": [
+      "Topics",
+      "5 - Data visualization with ggplot2"
+    ]
+  },
+  {
+    "objectID": "modules/05-Module.html#additional-resources",
+    "href": "modules/05-Module.html#additional-resources",
+    "title": "Reshaping Data",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\ndplyr cheatsheet\ndplyr website",
+    "crumbs": [
+      "Topics",
+      "5 - Data visualization with ggplot2"
+    ]
+  },
+  {
+    "objectID": "modules/03-Module.html",
+    "href": "modules/03-Module.html",
+    "title": "Data (importing and structure)",
+    "section": "",
+    "text": "R for Data Science chapter 7",
+    "crumbs": [
+      "Topics",
+      "3 - Data (importing and structure)"
+    ]
+  },
+  {
+    "objectID": "modules/03-Module.html#readings",
+    "href": "modules/03-Module.html#readings",
+    "title": "Data (importing and structure)",
+    "section": "",
+    "text": "R for Data Science chapter 7",
+    "crumbs": [
+      "Topics",
+      "3 - Data (importing and structure)"
+    ]
+  },
+  {
+    "objectID": "modules/03-Module.html#assignments",
+    "href": "modules/03-Module.html#assignments",
+    "title": "Data (importing and structure)",
+    "section": "Assignments",
+    "text": "Assignments\nData importing and structore lab",
+    "crumbs": [
+      "Topics",
+      "3 - Data (importing and structure)"
+    ]
+  },
+  {
+    "objectID": "modules/03-Module.html#additional-resources",
+    "href": "modules/03-Module.html#additional-resources",
+    "title": "Data (importing and structure)",
+    "section": "Additional Resources",
+    "text": "Additional Resources",
+    "crumbs": [
+      "Topics",
+      "3 - Data (importing and structure)"
+    ]
+  },
+  {
+    "objectID": "modules/01-Module.html",
+    "href": "modules/01-Module.html",
+    "title": "Introduction to R and RStudio",
+    "section": "",
+    "text": "The first thing you should do for this class is install R and RStudio. The software page has directions for install R and RStudio.",
+    "crumbs": [
+      "Topics",
+      "1 - Introduction to R and RStudio"
+    ]
+  },
+  {
+    "objectID": "modules/01-Module.html#readings",
+    "href": "modules/01-Module.html#readings",
+    "title": "Introduction to R and RStudio",
+    "section": "Readings",
+    "text": "Readings\nR for Data Science introduction and chapter 27.",
+    "crumbs": [
+      "Topics",
+      "1 - Introduction to R and RStudio"
+    ]
+  },
+  {
+    "objectID": "modules/01-Module.html#assignments",
+    "href": "modules/01-Module.html#assignments",
+    "title": "Introduction to R and RStudio",
+    "section": "Assignments",
+    "text": "Assignments\nIntro to R Lab",
+    "crumbs": [
+      "Topics",
+      "1 - Introduction to R and RStudio"
+    ]
+  },
+  {
+    "objectID": "modules/01-Module.html#additional-resources",
+    "href": "modules/01-Module.html#additional-resources",
+    "title": "Introduction to R and RStudio",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nThis talk by Jenny Bryan from the 2020 RStudio::conf provides some great advise and strategies on how to handle errors in R.",
+    "crumbs": [
+      "Topics",
+      "1 - Introduction to R and RStudio"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Announcements",
+    "section": "",
+    "text": "Be sure to check this page regularly for updates. In addition to periodic updates about the course, slides and recordings of the weekly meetups will be posted here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntro to Data\n\n\nSlides and recording for the Intro to Data meetup.\n\n\n\n\n\nFeb 2, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nIntro to the Course\n\n\nSlides and recording for the Intro to the Course meetup.\n\n\n\n\n\nJan 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to IS381!\n\n\nImportant information on how to get started with this course. Please read this post carefully.\n\n\n\n\n\nJan 15, 2026\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Announcements"
+    ]
+  },
+  {
+    "objectID": "instructor.html",
+    "href": "instructor.html",
+    "title": "Instructor",
+    "section": "",
+    "text": "Jason Bryer, Ph.D.\nEmail: jason.bryer@cuny.edu\nI am currently an Assistant Professor in Data Science and Information Systems at the City University of New York. Additionally, I am a consultant with Cornell University where he has developed a research and data collection platform for New York State’s Office of Special Education (https://data.osepartnership.org). Prior to joining CUNY, I was Executive Director at Excelsior College where he has served as Principal Investigator of the FIPSE First in the World grant to develop and research the Diagnostic Assessment and Achievement of College Skills along with supporting research and evaluation of other grants at the institution. My research interests include quasi-experimental designs with an emphasis in propensity score analysis, data systems to support formative assessment, and the use of open source software for conducting reproducible research. I have authored of over a dozen R packages, including three related to conducting propensity score analyses. When I’m not crunching numbers, I am a photographer and proud dad to three boys.\n\nContact\nOffice Hours (Zoom is preferred): By appointment. You’re encouraged to schedule an appointment and I have time nearly everyday. You are also encouraged to ask us questions on Slack. If you wish to ask a question in private, you can email me directly.\nFor the most part, you can expect me to respond to questions by email within 24 hours. If you do not hear back from me within 48 hours of sending an email, please resend your message. I will be checking in on the course regularly, just about every day and likely several times each day. Please do not hesitate to ask if you have questions or concerns.",
+    "crumbs": [
+      "Course information",
+      "Instructor"
+    ]
+  },
+  {
+    "objectID": "modules/02-Module.html",
+    "href": "modules/02-Module.html",
+    "title": "R coding basics",
+    "section": "",
+    "text": "R four Data Science chapter 2 and chapter 3",
+    "crumbs": [
+      "Topics",
+      "2 - R coding basics"
+    ]
+  },
+  {
+    "objectID": "modules/02-Module.html#readings",
+    "href": "modules/02-Module.html#readings",
+    "title": "R coding basics",
+    "section": "",
+    "text": "R four Data Science chapter 2 and chapter 3",
+    "crumbs": [
+      "Topics",
+      "2 - R coding basics"
+    ]
+  },
+  {
+    "objectID": "modules/02-Module.html#assignments",
+    "href": "modules/02-Module.html#assignments",
+    "title": "R coding basics",
+    "section": "Assignments",
+    "text": "Assignments\nR Coding Basics",
+    "crumbs": [
+      "Topics",
+      "2 - R coding basics"
+    ]
+  },
+  {
+    "objectID": "modules/02-Module.html#additional-resources",
+    "href": "modules/02-Module.html#additional-resources",
+    "title": "R coding basics",
+    "section": "Additional Resources",
+    "text": "Additional Resources",
+    "crumbs": [
+      "Topics",
+      "2 - R coding basics"
+    ]
+  },
+  {
+    "objectID": "modules/04-Module.html",
+    "href": "modules/04-Module.html",
+    "title": "Data visualization with ggplot2",
+    "section": "",
+    "text": "R for Data Science chapters 1, 9, and 10.",
+    "crumbs": [
+      "Topics",
+      "4 - Reshaping data"
+    ]
+  },
+  {
+    "objectID": "modules/04-Module.html#readings",
+    "href": "modules/04-Module.html#readings",
+    "title": "Data visualization with ggplot2",
+    "section": "",
+    "text": "R for Data Science chapters 1, 9, and 10.",
+    "crumbs": [
+      "Topics",
+      "4 - Reshaping data"
+    ]
+  },
+  {
+    "objectID": "modules/04-Module.html#assignments",
+    "href": "modules/04-Module.html#assignments",
+    "title": "Data visualization with ggplot2",
+    "section": "Assignments",
+    "text": "Assignments\nData visualizaiton lab",
+    "crumbs": [
+      "Topics",
+      "4 - Reshaping data"
+    ]
+  },
+  {
+    "objectID": "modules/04-Module.html#additional-resources",
+    "href": "modules/04-Module.html#additional-resources",
+    "title": "Data visualization with ggplot2",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nggplot2 documentation website\nggplot2 cheatsheet\nggplot2 book",
+    "crumbs": [
+      "Topics",
+      "4 - Reshaping data"
+    ]
+  },
+  {
+    "objectID": "modules/06-Module.html",
+    "href": "modules/06-Module.html",
+    "title": "Probability",
+    "section": "",
+    "text": "OpenIntro Statistics chapter 3",
+    "crumbs": [
+      "Topics",
+      "6 - Probability"
+    ]
+  },
+  {
+    "objectID": "modules/06-Module.html#readings",
+    "href": "modules/06-Module.html#readings",
+    "title": "Probability",
+    "section": "",
+    "text": "OpenIntro Statistics chapter 3",
+    "crumbs": [
+      "Topics",
+      "6 - Probability"
+    ]
+  },
+  {
+    "objectID": "modules/06-Module.html#assignments",
+    "href": "modules/06-Module.html#assignments",
+    "title": "Probability",
+    "section": "Assignments",
+    "text": "Assignments\nProbability Lab",
+    "crumbs": [
+      "Topics",
+      "6 - Probability"
+    ]
+  },
+  {
+    "objectID": "modules/06-Module.html#additional-resources",
+    "href": "modules/06-Module.html#additional-resources",
+    "title": "Probability",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nOpenIntro Statistics slides\nMatloff, N. (2009). From Algorithms to Z-Scores: Probabilistic and Statistical Modeling in Computer Science. Available from http://heather.cs.ucdavis.edu/probstatbook.\n\n\nVideos\nProbability Introduction\n\n\nWould You Take This Bet?\n\n\nThe Monty Hall Problem",
+    "crumbs": [
+      "Topics",
+      "6 - Probability"
+    ]
+  },
+  {
+    "objectID": "modules/08-Module.html",
+    "href": "modules/08-Module.html",
+    "title": "Foundation for inference",
+    "section": "",
+    "text": "OpenIntro Statistics chapter 5",
+    "crumbs": [
+      "Topics",
+      "8 - Foundation for inference"
+    ]
+  },
+  {
+    "objectID": "modules/08-Module.html#readings",
+    "href": "modules/08-Module.html#readings",
+    "title": "Foundation for inference",
+    "section": "",
+    "text": "OpenIntro Statistics chapter 5",
+    "crumbs": [
+      "Topics",
+      "8 - Foundation for inference"
+    ]
+  },
+  {
+    "objectID": "modules/08-Module.html#assignments",
+    "href": "modules/08-Module.html#assignments",
+    "title": "Foundation for inference",
+    "section": "Assignments",
+    "text": "Assignments\nSampling Distribution Lab",
+    "crumbs": [
+      "Topics",
+      "8 - Foundation for inference"
+    ]
+  },
+  {
+    "objectID": "modules/08-Module.html#additional-resources",
+    "href": "modules/08-Module.html#additional-resources",
+    "title": "Foundation for inference",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nOpenIntro Statistics slides\nWhy do we use 0.05 as a significance level?\n\n\nVideos",
+    "crumbs": [
+      "Topics",
+      "8 - Foundation for inference"
+    ]
+  },
+  {
+    "objectID": "modules/10-Module.html",
+    "href": "modules/10-Module.html",
+    "title": "Inference for Proportions",
+    "section": "",
+    "text": "OpenIntro Statistics chapter 6",
+    "crumbs": [
+      "Topics",
+      "10 - Inference for proportions"
+    ]
+  },
+  {
+    "objectID": "modules/10-Module.html#readings",
+    "href": "modules/10-Module.html#readings",
+    "title": "Inference for Proportions",
+    "section": "",
+    "text": "OpenIntro Statistics chapter 6",
+    "crumbs": [
+      "Topics",
+      "10 - Inference for proportions"
+    ]
+  },
+  {
+    "objectID": "modules/10-Module.html#assignments",
+    "href": "modules/10-Module.html#assignments",
+    "title": "Inference for Proportions",
+    "section": "Assignments",
+    "text": "Assignments\nInference for Proportions Lab",
+    "crumbs": [
+      "Topics",
+      "10 - Inference for proportions"
+    ]
+  },
+  {
+    "objectID": "modules/10-Module.html#additional-resources",
+    "href": "modules/10-Module.html#additional-resources",
+    "title": "Inference for Proportions",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nOpenIntro Statistics slides\n\n\nVideos",
+    "crumbs": [
+      "Topics",
+      "10 - Inference for proportions"
+    ]
+  },
+  {
+    "objectID": "modules/12-Module.html",
+    "href": "modules/12-Module.html",
+    "title": "Inference for Numerical Data",
+    "section": "",
+    "text": "OpenIntro Statistics chapter 7",
+    "crumbs": [
+      "Topics",
+      "12 - Inference for numerical data"
+    ]
+  },
+  {
+    "objectID": "modules/12-Module.html#readings",
+    "href": "modules/12-Module.html#readings",
+    "title": "Inference for Numerical Data",
+    "section": "",
+    "text": "OpenIntro Statistics chapter 7",
+    "crumbs": [
+      "Topics",
+      "12 - Inference for numerical data"
+    ]
+  },
+  {
+    "objectID": "modules/12-Module.html#assignments",
+    "href": "modules/12-Module.html#assignments",
+    "title": "Inference for Numerical Data",
+    "section": "Assignments",
+    "text": "Assignments\nInference for Numerical Data Lab",
+    "crumbs": [
+      "Topics",
+      "12 - Inference for numerical data"
+    ]
+  },
+  {
+    "objectID": "modules/12-Module.html#additional-resources",
+    "href": "modules/12-Module.html#additional-resources",
+    "title": "Inference for Numerical Data",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nOpenIntro Statistics slides\n\n\nVideos",
+    "crumbs": [
+      "Topics",
+      "12 - Inference for numerical data"
+    ]
+  },
+  {
+    "objectID": "modules/14-Module.html",
+    "href": "modules/14-Module.html",
+    "title": "Correlation",
+    "section": "",
+    "text": "Intro to Modern Statistics chapter 7.1",
+    "crumbs": [
+      "Topics",
+      "14 - Correlation"
+    ]
+  },
+  {
+    "objectID": "modules/14-Module.html#readings",
+    "href": "modules/14-Module.html#readings",
+    "title": "Correlation",
+    "section": "",
+    "text": "Intro to Modern Statistics chapter 7.1",
+    "crumbs": [
+      "Topics",
+      "14 - Correlation"
+    ]
+  },
+  {
+    "objectID": "modules/14-Module.html#assignments",
+    "href": "modules/14-Module.html#assignments",
+    "title": "Correlation",
+    "section": "Assignments",
+    "text": "Assignments\nCorrelation Lab",
+    "crumbs": [
+      "Topics",
+      "14 - Correlation"
+    ]
+  },
+  {
+    "objectID": "modules/14-Module.html#additional-resources",
+    "href": "modules/14-Module.html#additional-resources",
+    "title": "Correlation",
+    "section": "Additional Resources",
+    "text": "Additional Resources",
+    "crumbs": [
+      "Topics",
+      "14 - Correlation"
+    ]
+  },
+  {
+    "objectID": "posts/00-Welcome.html",
+    "href": "posts/00-Welcome.html",
+    "title": "Welcome to IS381!",
+    "section": "",
+    "text": "Welcome to IS381! Couple of important notes as you get started:\n\nComplete this Google Form as soon as possible. I will use some of the data (in aggregate) in the meetup.\nJoin the Slack channel by clicking here (or use your @sps.cuny.edu email address). This will be our primary mode of communication.\nFor private communications, you can either send private Slack messages or email me at jason.bryer@cuny.edu.\nComplete the self-regulated learning assessment in DAACS. Visit cuny.daacs.net and sign-in using your CUNY account.\nOur Meetups will be on Monday from 6:30pm to 7:30pm. I expect everyone to attend or watch the Meetups. Important information will be shared during the meetups that will not be available in any other format.\n\nI am looking forward to getting to know everyone and a fantastic semester! Good luck!"
+  },
+  {
+    "objectID": "posts/02-Intro_to_Data.html",
+    "href": "posts/02-Intro_to_Data.html",
+    "title": "Intro to Data",
     "section": "",
     "text": "Click here to open the slides."
   },
@@ -739,7 +746,7 @@
     "href": "schedule.html",
     "title": "IS381 Statistics and Probability with R",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses.\nMeetups will be held on Monday from 6:30pm to 7:30pm. Click here to join the meetup.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nStart\nEnd\nMeetup\nTopic\nPrepare\nLab\nSlides\nVideo\nResources\n\n\n\n\n1\n2026-01-26\n2026-02-01\n2026-01-26\nIntro to the Course\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n2026-02-02\n2026-02-08\n2026-02-02\nIntro to Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n2026-02-09\n2026-02-15\n2026-02-09\nData (importing and structure)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n2026-02-16\n2026-02-22\n\nData visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n2026-02-23\n2026-03-01\n2026-02-23\nReshaping Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n2026-03-02\n2026-03-08\n2026-03-02\nProbability\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n2026-03-09\n2026-03-15\n2026-03-09\nDistributions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n2026-03-16\n2026-03-22\n2026-03-16\nFoundation for inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n2026-03-23\n2026-03-29\n2026-03-23\nNull Hypothesis Testing\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n2026-03-30\n2026-04-05\n2026-03-30\nInference for proportions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2026-04-06\n2026-04-12\n\nNO CLASS - Spring Break\n\n\n\n\n\n\n\n11\n2026-04-13\n2026-04-19\n2026-04-13\nInference for two-way tables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n2026-04-20\n2026-04-26\n2026-04-20\nInference for numerical data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n2026-04-27\n2026-05-03\n2026-04-27\nAnalysis of variance\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2026-05-04\n2026-05-10\n2026-05-04\nCorrelation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n2026-05-11\n2026-05-17\n2026-05-11\nWrap up / Final Presentations",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses.\nMeetups will be held on Monday from 6:30pm to 7:30pm. Click here to join the meetup.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nStart\nEnd\nMeetup\nTopic\nPrepare\nLab\nSlides\nVideo\nResources\n\n\n\n\n1\n2026-01-26\n2026-02-01\n2026-01-26\nIntro to the Course\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n2026-02-02\n2026-02-08\n2026-02-02\nIntro to Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n2026-02-09\n2026-02-15\n2026-02-09\nData (importing and structure)\n\n\n\n\n\n\n\n\n\n\n\n4\n2026-02-16\n2026-02-22\n\nData visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n2026-02-23\n2026-03-01\n2026-02-23\nReshaping Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n2026-03-02\n2026-03-08\n2026-03-02\nProbability\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n2026-03-09\n2026-03-15\n2026-03-09\nDistributions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n2026-03-16\n2026-03-22\n2026-03-16\nFoundation for inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n2026-03-23\n2026-03-29\n2026-03-23\nNull Hypothesis Testing\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n2026-03-30\n2026-04-05\n2026-03-30\nInference for proportions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2026-04-06\n2026-04-12\n\nNO CLASS - Spring Break\n\n\n\n\n\n\n\n11\n2026-04-13\n2026-04-19\n2026-04-13\nInference for two-way tables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n2026-04-20\n2026-04-26\n2026-04-20\nInference for numerical data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13\n2026-04-27\n2026-05-03\n2026-04-27\nAnalysis of variance\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\n2026-05-04\n2026-05-10\n2026-05-04\nCorrelation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15\n2026-05-11\n2026-05-17\n2026-05-11\nWrap up / Final Presentations",
     "crumbs": [
       "Schedule"
     ]
