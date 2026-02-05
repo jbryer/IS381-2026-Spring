@@ -18,8 +18,8 @@ project:
 
 website:
   announcement:
-    content: "Our first meetup will be Monday, January 26th at 6:30pm. [Click here to join.](https://us02web.zoom.us/j/81437953852?pwd=Q9bNGwoair9WGOtb4dBsI6cdi5QHUI.1)"
-    # content: "Please be sure to join our Slack channel by following this [link](https://cuny-msds.slack.com/archives/C09B31HKH9C)."
+    # content: "Our first meetup will be Monday, January 26th at 6:30pm. [Click here to join.](https://us02web.zoom.us/j/81437953852?pwd=Q9bNGwoair9WGOtb4dBsI6cdi5QHUI.1)"
+    content: "Please be sure to join our Slack channel by following this [link](https://cuny-msds.slack.com/archives/C0A8WU2C0UW)."
     position: below-navbar # above-navbar or below-navbar
     icon: slack #info-circle # https://icons.getbootstrap.com
     dismissable: false
