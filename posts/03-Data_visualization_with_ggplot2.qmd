@@ -1,0 +1,16 @@
+---
+title: "Data visualization with ggplot2"
+date: 2026-02-09
+draft: false
+description: "Slides and recording for the *Data visualization with ggplot2* meetup."
+categories: ["Meetups"]
+image: "03-Data_visualization_with_ggplot2.png"
+---
+
+
+[Click here](/slides/04-Data_Visualization.html#1) to open the slides.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1UI__xuCCkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
