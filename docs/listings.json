@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/05-Reshaping_Data.html",
       "/posts/03-Data_visualization_with_ggplot2.html",
       "/posts/02-Intro_to_Data.html",
       "/posts/01-Intro_to_the_Course.html",
