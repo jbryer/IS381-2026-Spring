@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-03-02">
+<meta name="description" content="Slides and recording for the Probability meetup.">
 
-<title>Data visualization with ggplot2 – IS381 Statistics and Probability with R</title>
+<title>Probability – IS381 Statistics and Probability with R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../modules/05-Module.html" rel="next">
-<link href="../modules/03-Module.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -75,9 +75,12 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Data visualization with ggplot2 – IS381 Statistics and Probability with R">
-<meta property="og:description" content="CUNY School of Professional Studies">
+<meta property="og:title" content="Probability – IS381 Statistics and Probability with R">
+<meta property="og:description" content="Slides and recording for the Probability meetup.">
+<meta property="og:image" content="https://spring2026.is381.net/posts/06-Probability.png">
 <meta property="og:site_name" content="IS381 Statistics and Probability with R">
+<meta property="og:image:height" content="720">
+<meta property="og:image:width" content="1280">
 </head>
 
 <body class="nav-sidebar docked fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -251,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/01-Module.html">Topics</a></li><li class="breadcrumb-item"><a href="../modules/04-Module.html">4 - Reshaping data</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Probability</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -380,7 +383,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/04-Module.html" class="sidebar-item-text sidebar-link active">
+  <a href="../modules/04-Module.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">4 - Reshaping data</span></a>
   </div>
 </li>
@@ -462,16 +465,30 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/01-Module.html">Topics</a></li><li class="breadcrumb-item"><a href="../modules/04-Module.html">4 - Reshaping data</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data visualization with ggplot2</h1>
-</div>
+<h1 class="title">Probability</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Meetups</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Slides and recording for the <em>Probability</em> meetup.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 2, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -481,24 +498,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="readings" class="level2">
-<h2 class="anchored" data-anchor-id="readings">Readings</h2>
-<p>R for Data Science chapters <a href="https://r4ds.hadley.nz/data-visualize.html">1</a>, <a href="https://r4ds.hadley.nz/layers.html">9</a>, and <a href="https://r4ds.hadley.nz/EDA.html">10</a>.</p>
-</section>
-<section id="assignments" class="level2">
-<h2 class="anchored" data-anchor-id="assignments">Assignments</h2>
-<p><a href="../assignments/04_Data_Visualization.zip">Data visualizaiton lab</a></p>
-</section>
-<section id="additional-resources" class="level2">
-<h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
-<ul>
-<li><p><a href="https://ggplot2.tidyverse.org">ggplot2 documentation website</a></p></li>
-<li><p><a href="https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf">ggplot2 cheatsheet</a></p></li>
-<li><p><a href="https://ggplot2-book.org">ggplot2 book</a></p></li>
-</ul>
+<p><a href="../slides/06-Probability.html#1">Click here</a> to open the slides.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wIJV74NhoRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -914,21 +918,9 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../modules/03-Module.html" class="pagination-link" aria-label="3 - Data (importing and structure)">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">3 - Data (importing and structure)</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../modules/05-Module.html" class="pagination-link" aria-label="5 - Data visualization with ggplot2">
-        <span class="nav-page-text">5 - Data visualization with ggplot2</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/jbryer/IS381-2026-Spring/edit/master/website/modules/04-Module.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jbryer/IS381-2026-Spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/jbryer/IS381-2026-Spring/edit/master/website/posts/06-Probability.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jbryer/IS381-2026-Spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

@@ -1,0 +1,16 @@
+---
+title: "Probability"
+date: 2026-03-02
+draft: false
+description: "Slides and recording for the *Probability* meetup."
+categories: ["Meetups"]
+image: "06-Probability.png"
+---
+
+
+[Click here](/slides/06-Probability.html#1) to open the slides.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wIJV74NhoRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
