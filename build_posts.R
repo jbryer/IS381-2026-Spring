@@ -15,7 +15,7 @@ for(i in 1:nrow(meetups)) {
 			blogcontent <- ''
 			if(!is.na(meetups[i,]$Slides)) {
 				blogcontent <- paste0(blogcontent, '[Click here](/', slides_dir, '/', meetups[i,]$Slides, '.html#1) to open the slides')
-				pdf_slide <- paste0(slides_dir, '/', meetups[i,]$Slides)
+				pdf_slide <- paste0(slides_dir, '/', meetups[i,]$Slides, '.pdf')
 				if(file.exists(pdf_slide)) {
 					blogcontent <- paste0(blogcontent, '([PDF](/', slides_dir, '/', meetups[i,]$Slides, '.pdf))')
 				}

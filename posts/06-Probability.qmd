@@ -8,7 +8,7 @@ image: "06-Probability.png"
 ---
 
 
-[Click here](/slides/06-Probability.html#1) to open the slides.
+[Click here](/slides/06-Probability.html#1) to open the slides([PDF](/slides/06-Probability.pdf)).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wIJV74NhoRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
