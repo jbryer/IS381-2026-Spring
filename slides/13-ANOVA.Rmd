@@ -1,0 +1,559 @@
+---
+title: "Analysis of Variance (ANOVA)"
+subtitle: "IS381 - Statistics and Probability with R"
+author: Jason Bryer, Ph.D.
+date: "November 17, 2025"
+output:
+  xaringan::moon_reader:
+    css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: solarized-light
+      highlightLanguage: R
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      navigation:
+        scroll: false
+    includes:
+      in_header: [assets/header.html]
+      after_body: [assets/insert-logo.html]
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include = FALSE}
+# Cartoons from https://github.com/allisonhorst/stats-illustrations
+# dplyr based upon https://allisonhorst.shinyapps.io/dplyr-learnr/#section-welcome
+
+source('../config.R')
+options(width = 120)
+```
+
+class: center, middle, inverse, title-slide
+
+# `r metadata$title`
+## `r metadata$subtitle`
+### `r metadata$author`
+### `r metadata$date`
+
+
+---
+# One Minute Paper Results
+
+```{r, echo=FALSE, cache=FALSE}
+library(googlesheets4)
+omp <- read_sheet(one_minute_paper_results)
+omp <- omp %>% dplyr::filter(Topic == 'Inference for Categorical Data (Chapter 6)')
+```
+
+.pull-left[
+**What was the most important thing you learned during this class?**
+```{r, echo=FALSE, fig.height=9}
+ompWordCloud(omp$`What was the most important thing you learned during this class?`)
+```
+]
+.pull-right[
+**What important question remains unanswered for you?**
+```{r, echo=FALSE, fig.height=9}
+ompWordCloud(omp$`What important question remains unanswered for you?`)
+```
+]
+
+
+```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+require(ggplot2)
+require(gdata)
+require(psych)
+require(granova)
+require(granovaGG)
+require(lattice)
+library(VisualStats)
+library(ggbeeswarm)
+
+data(singer)
+data(rat)
+data(hand_washing, package = 'VisualStats')
+```
+]
+
+
+
+---
+class: font90
+# Analysis of Variance (ANOVA)
+
+The goal of ANOVA is to test whether there is a discernible difference between the means of several groups.
+
+**Hand Washing Example**
+
+Is there a difference between washing hands with:  water only, regular soap, antibacterial soap (ABS), and antibacterial spray (AS)?
+
+* Each tested with 8 replications
+* Treatments randomly assigned
+
+For ANOVA:
+
+* The means all differ.
+* Is this just natural variability?
+* Null hypothesis:  All the means are the same.
+* Alternative hypothesis:  The means are not all the same.
+
+Source: De Veaux, R.D., Velleman, P.F., & Bock, D.E. (2014). *Intro Stats, 4th Ed.* Pearson.
+
+---
+# Boxplot
+
+```{r, fig.height=6}
+ggplot(hand_washing, aes(x = Method, y = Bacterial_Counts)) +  geom_boxplot() +
+    geom_beeswarm(aes(color = Method)) + theme(legend.position = 'none')
+```
+
+---
+class: font90
+# Descriptive Statistics
+
+```{r}
+desc <- psych::describeBy(hand_washing$Bacterial_Counts, group = hand_washing$Method, mat = TRUE, skew = FALSE)
+names(desc)[2] <- 'Method' # Rename the grouping column
+desc$Var <- desc$sd^2 # We will need the variance latter, so calculate it here
+desc
+```
+
+.pull-left[
+```{r}
+( k <- length(unique(hand_washing$Method)) )
+( n <- nrow(hand_washing) )
+```
+]
+.pull-right[
+```{r}
+( grand_mean <- mean(hand_washing$Bacterial_Counts) )
+( grand_var <- var(hand_washing$Bacterial_Counts) )
+( pooled_var <- mean(desc$Var) )
+```
+]
+
+---
+# Contrasts
+
+A contrast is a linear combination of two or more factor level means with coefficients that sum to zero.
+
+```{r}
+desc$contrast <- (desc$mean - mean(desc$mean))
+mean(desc$contrast) # Should be 0!
+desc
+```
+
+---
+# Plotting using contrasts
+
+```{r, echo=FALSE}
+anova_vis(Y = hand_washing$Bacterial_Counts, 
+          group = hand_washing$Method,
+          plot_boxplot = TRUE,
+          plot_group_variances = FALSE,
+          plot_group_sd = FALSE,
+          plot_ms_within = FALSE,
+          plot_ms_between = FALSE,
+          plot_unit_line = FALSE,
+          plot_grand_mean = FALSE,
+          plot_sd_line = FALSE,
+          plot_pooled_sd = FALSE,
+          plot_between_group_variances = FALSE,
+          ylab = 'Bacterial Counts'
+)
+```
+
+
+
+---
+# Grade Mean and Unit Line (slope = 1, intercept = $\bar{x}$)
+
+```{r, echo = FALSE}
+anova_vis(Y = hand_washing$Bacterial_Counts, 
+          group = hand_washing$Method,
+          plot_boxplot = FALSE,
+          plot_group_variances = FALSE,
+          plot_group_sd = FALSE,
+          plot_ms_within = FALSE,
+          plot_ms_between = FALSE,
+          plot_unit_line = TRUE,
+          plot_grand_mean = TRUE,
+          plot_sd_line = FALSE,
+          plot_pooled_sd = FALSE,
+          plot_between_group_variances = FALSE,
+          ylab = 'Bacterial Counts'
+)
+```
+
+
+---
+# Within Group Variance (error)
+
+$$SS_{within} = \sum^{}_{k} \sum^{}_{i} (\bar{x}_{ik} -\bar{x}_{k} )^{2}$$
+---
+# Within Group Variance (error)
+
+
+```{r, echo=FALSE}
+anova_vis(Y = hand_washing$Bacterial_Counts, 
+          group = hand_washing$Method,
+          plot_boxplot = FALSE,
+          plot_group_variances = TRUE,
+          plot_group_sd = TRUE,
+          plot_ms_within = FALSE,
+          plot_ms_between = FALSE,
+          plot_unit_line = TRUE,
+          plot_grand_mean = TRUE,
+          plot_sd_line = FALSE,
+          plot_pooled_sd = FALSE,
+          plot_between_group_variances = FALSE,
+          ylab = 'Bacterial Counts'
+)
+```
+
+
+---
+# Within Group Variance (error)
+
+```{r, echo=FALSE}
+anova_vis(Y = hand_washing$Bacterial_Counts, 
+          group = hand_washing$Method,
+          plot_boxplot = FALSE,
+          plot_group_variances = TRUE,
+          plot_group_sd = TRUE,
+          plot_ms_within = TRUE,
+          plot_ms_between = FALSE,
+          plot_unit_line = TRUE,
+          plot_grand_mean = TRUE,
+          plot_sd_line = FALSE,
+          plot_pooled_sd = FALSE,
+          plot_between_group_variances = FALSE,
+          ylab = 'Bacterial Counts'
+)
+```
+
+
+---
+# Within Group Variance (error)
+
+```{r, echo=FALSE}
+anova_vis(Y = hand_washing$Bacterial_Counts, 
+          group = hand_washing$Method,
+          plot_boxplot = FALSE,
+          plot_group_variances = FALSE,
+          plot_group_sd = TRUE,
+          plot_ms_within = TRUE,
+          plot_ms_between = FALSE,
+          plot_unit_line = TRUE,
+          plot_grand_mean = TRUE,
+          plot_sd_line = FALSE,
+          plot_pooled_sd = TRUE,
+          plot_between_group_variances = FALSE,
+          ylab = 'Bacterial Counts'
+)
+```
+
+---
+# Between Group Variance
+
+$$SS_{between} = \sum^{}_{k} n_{k}(\bar{x}_{k} -\bar{x} )^{2}$$
+
+
+---
+# Between Group Variance
+
+```{r, echo=FALSE}
+anova_vis(Y = hand_washing$Bacterial_Counts, 
+          group = hand_washing$Method,
+          plot_boxplot = FALSE,
+          plot_group_variances = FALSE,
+          plot_group_sd = TRUE,
+          plot_ms_within = FALSE,
+          plot_ms_between = FALSE,
+          plot_unit_line = TRUE,
+          plot_grand_mean = TRUE,
+          plot_sd_line = FALSE,
+          plot_pooled_sd = FALSE,
+          plot_between_group_variances = TRUE,
+          ylab = 'Bacterial Counts'
+)
+```
+
+
+---
+# Between Group Variance
+
+```{r, echo=FALSE}
+anova_vis(Y = hand_washing$Bacterial_Counts, 
+          group = hand_washing$Method,
+          plot_boxplot = FALSE,
+          plot_group_variances = FALSE,
+          plot_group_sd = TRUE,
+          plot_ms_within = FALSE,
+          plot_ms_between = TRUE,
+          plot_unit_line = TRUE,
+          plot_grand_mean = TRUE,
+          plot_sd_line = FALSE,
+          plot_pooled_sd = FALSE,
+          plot_between_group_variances = FALSE,
+          ylab = 'Bacterial Counts'
+)
+```
+
+---
+# Mean Square
+
+| Source                  | Sum of Squares                                              | *df*  | MS                                   |
+| ------------------------|:-----------------------------------------------------------:|:-----:|:------------------------------------:|
+| Between Group (Treatment) | $\sum^{}_{k} n_{k}(\bar{x}_{k} -\bar{x} )^{2}$              | k - 1 | $\frac{SS_{between}}{df_{between}}$ 
+| Within Group (Error)    | $\sum^{}_{k} \sum^{}_{i} (\bar{x}_{ik} -\bar{x}_{k} )^{2}$  | n - k | $\frac{SS_{within}}{df_{within}}$    |
+| Total                   | $\sum_{n} ({x}_{n} -\bar{x} )^{2}$      | n - 1 |                                      |
+
+
+
+---
+# $MS_{Between} / MS_{Within}$ = F-Statistic
+
+Mean squares can be represented as squares, hence the ratio of area of the two rectagles is equal to $\frac{MS_{Between}}{MS_{Within}}$ which is the F-statistic.
+
+```{r, echo=FALSE, fig.height=6}
+anova_vis(Y = hand_washing$Bacterial_Counts, 
+          group = hand_washing$Method,
+          plot_boxplot = FALSE,
+          plot_group_variances = FALSE,
+          plot_group_sd = TRUE,
+          plot_ms_within = TRUE,
+          plot_ms_between = TRUE,
+          plot_unit_line = TRUE,
+          plot_grand_mean = TRUE,
+          plot_sd_line = FALSE,
+          plot_pooled_sd = FALSE,
+          plot_between_group_variances = FALSE,
+          ylab = 'Bacterial Counts'
+)
+```
+
+
+---
+# Washing type all the same?
+
+$H_0: \mu_1 = \mu_2 = \mu_3 = \mu_4$
+
+Variance components we need to evaluate the null hypothesis:
+
+* Between Sum of Squares: $SS_{between} = \sum^{}_{k} n_{k}(\bar{x}_{k} -\bar{x} )^{2}$
+
+* Within Sum of Squares: $SS_{within} = \sum^{}_{k} \sum^{}_{i} (\bar{x}_{ik} -\bar{x}_{k} )^{2}$
+
+* Between degrees of freedom: $df_{between} =  k - 1$ (k = number of groups)
+
+* Within degrees of freedom: $df_{within} =  k(n - 1)$
+
+* Mean square between (aka treatment): $MS_{T} = \frac{SS_{between}}{df_{between}}$
+
+* Mean square within (aka error): $MS_{E} = \frac{SS_{within}}{df_{within}}$
+
+
+```{r, eval=FALSE, echo=FALSE}
+( ss_between <- sum(desc$n * (desc$mean - mean(hand_washing$Bacterial_Counts))^2) )
+( ss_within <- sum((tmp$Bacterial_Counts - tmp$mean)^2) )
+( ss_total <- sum((hand_washing$Bacterial_Counts - mean(hand_washing$Bacterial_Counts))^2) )
+tmp <- merge(hand_washing, desc[,c('group1','mean')], by.x = 'Method', by.y = 'group1')
+ss_between + ss_within == ss_total # Verify everything adds up
+var(hand_washing$Bacterial_Counts) / 4
+```
+
+
+---
+# Comparing $MS_T$ (between) and $MS_E$ (within)
+
+.pull-left[
+Assume each washing method has the same variance.
+
+Then we can pool them all together to get the pooled variance ${ s }_{ p }^{ 2 }$
+
+Since the sample sizes are all equal, we can average the four variances: ${ s }_{ p }^{ 2 } = `r prettyNum(mean(desc$Var), digits = 6)`$
+
+```{r}
+mean(desc$Var)
+```
+]
+
+--
+
+.pull-right[
+$MS_T$
+
+* Estimates ${ s }_{ p }^{ 2 }$ if $H_0$ is true
+* Should be larger than ${ s }_{ p }^{ 2 }$ if $H_0$ is false
+
+$MS_E$
+
+* Estimates ${ s }_{ p }^{ 2 }$ whether $H_0$ is true or not
+* If $H_0$ is true, both close to ${ s }_{ p }^{ 2 }$, so $MS_T$ is close to $MS_E$
+
+Comparing
+
+* If $H_0$ is true, $\frac{MS_T}{MS_E}$ should be close to 1
+* If $H_0$ is false, $\frac{MS_T}{MS_E}$ tends to be > 1
+]
+
+---
+class: font120
+# The F-Distribution 
+
+* How do we tell whether $\frac{MS_T}{MS_E}$ is larger enough to not be due just to random chance?
+
+* $\frac{MS_T}{MS_E}$ follows the F-Distribution
+	* Numerator df:  k - 1 (k = number of groups)
+	* Denominator df:  k(n - 1)  
+	* n = # observations in each group
+	
+* $F = \frac{MS_T}{MS_E}$ is called the F-Statistic.
+
+A Shiny App by Dr. Dudek to explore the F-Distribution: <a href='https://shiny.rit.albany.edu/stat/fdist/' window='_new'>https://shiny.rit.albany.edu/stat/fdist/</a>
+
+---
+# The F-Distribution (cont.) 
+
+```{r fdistribution, fig.width=10, fig.height=6, tidy=FALSE, eval=TRUE}
+df.numerator <- 4 - 1
+df.denominator <- 4 * (8 - 1)
+DATA606::F_plot(df.numerator, df.denominator, cv = qf(0.95, df.numerator, df.denominator))
+```
+
+
+---
+class: font120
+# ANOVA Table
+
+
+| Source                  | Sum of Squares                                              | *df*  | MS                                   | F                                   | p                              |
+| ------------------------|:-----------------------------------------------------------:|:-----:|:------------------------------------:|:-----------------------------------:|--------------------------------|
+| Between Group (Treatment) | $\sum^{}_{k} n_{k}(\bar{x}_{k} -\bar{x} )^{2}$              | k - 1 | $\frac{SS_{between}}{df_{between}}$  | $\frac{MS_{between}}{MS_{within}}$  | area to right of $F_{k-1,n-k}$ |
+| Within Group (Error)    | $\sum^{}_{k} \sum^{}_{i} (\bar{x}_{ik} -\bar{x}_{k} )^{2}$  | n - k | $\frac{SS_{within}}{df_{within}}$    |                                     |                                |
+| Total                   | $\sum_{n} ({x}_{n} -\bar{x} )^{2}$      | n - 1 |                                      |                                     |                                |
+
+
+```{r}
+aov(Bacterial_Counts ~ Method, data = hand_washing) |> summary()
+```
+
+
+---
+# Assumptions and Conditions
+
+* To check the assumptions and conditions for ANOVA, always look at  the side-by-side boxplots.
+	* Check for outliers within any group.
+	* Check for similar spreads.
+	* Look for skewness.
+	* Consider re-expressing.
+	
+* Independence Assumption
+	* Groups must be independent of each other.
+	* Data within each group must be independent.
+	* Randomization Condition
+	
+* Equal Variance Assumption
+	* In ANOVA, we pool the variances.  This requires equal variances from each group:  Similar Spread Condition.
+
+
+---
+# More Information
+
+ANOVA Vignette in the `VisualStats` package: https://jbryer.github.io/VisualStats/articles/anova.html
+
+The plots were created using the `VisualStats::anova_vis()` function.
+
+Shiny app:
+
+```{r, eval=FALSE}
+# remotes::install_github('jbryer/VisualStats')
+library(VisualStats)
+VisualStats::anova_shiny()
+```
+
+
+---
+class: font120
+# What Next? 
+
+* P-value large -> Nothing left to say
+* P-value small -> Which means are large and which means are small?
+* We can perform a t-test to compare two of them.
+* We assumed the standard deviations are all equal.
+* Use $s_p$, for pooled standard deviations.
+* Use the Students t-model, df = N - k.
+* If we wanted to do a t-test for each pair:
+	* P(Type I Error) = 0.05 for each test.
+	* Good chance at least one will have a Type I error.
+* **Bonferroni to the rescue!**
+	* Adjust a to $\alpha/J$ where J is the number of comparisons.
+	* 95% confidence (1 - 0.05) with 3 comparisons adjusts to $(1 - 0.05/3) \approx  0.98333$.
+	* Use this adjusted value to find t**.
+
+---
+# Multiple Comparisons (no Bonferroni adjustment)
+
+.code80[
+```{r, fig.height=5, tidy=FALSE}
+cv <- qt(0.05, df = 15)
+tab <- describeBy(hand_washing$Bacterial_Counts, group = hand_washing$Method, mat = TRUE)
+ggplot(hand_washing, aes(x = Method, y = Bacterial_Counts)) + geom_boxplot() + 
+	geom_errorbar(data = tab, aes(x = group1, y = mean, 
+								  ymin = mean - cv * se, ymax = mean + cv * se), 
+				  color = 'darkgreen', width = 0.5, size = 1) +
+	geom_point(data = tab, aes(x = group1, y = mean), color = 'blue', size = 3)
+```
+]
+
+---
+# Multiple Comparisons (3 paired tests)
+
+.code80[
+```{r, fig.height=5, tidy=FALSE}
+cv <- qt(0.05 / 3, df = 15)
+tab <- describeBy(hand_washing$Bacterial_Counts, group = hand_washing$Method, mat = TRUE)
+ggplot(hand_washing, aes(x = Method, y = Bacterial_Counts)) + geom_boxplot() + 
+	geom_errorbar(data = tab, aes(x = group1, y = mean, 
+								  ymin = mean - cv * se, ymax = mean + cv * se), 
+				  color = 'darkgreen', width = 0.5, size = 1) +
+	geom_point(data = tab, aes(x = group1, y = mean), color = 'blue', size = 3)
+```
+]
+
+---
+# Multiple Comparisons (6 paired tests)
+
+.code80[
+```{r, fig.height=5, tidy=FALSE}
+cv <- qt(0.05 / choose(4, 2), df = 15)
+tab <- describeBy(hand_washing$Bacterial_Counts, group = hand_washing$Method, mat = TRUE)
+ggplot(hand_washing, aes(x = Method, y = Bacterial_Counts)) + geom_boxplot() + 
+	geom_errorbar(data = tab, aes(x = group1, y = mean, 
+								  ymin = mean - cv * se, ymax = mean + cv * se ), 
+				  color = 'darkgreen', width = 0.5, size = 1) +
+	geom_point(data = tab, aes(x = group1, y = mean), color = 'blue', size = 3)
+```
+]
+
+
+
+---
+class: left, font140
+# One Minute Paper
+
+.pull-left[
+1. What was the most important thing you learned during this class?
+2. What important question remains unanswered for you?
+]
+.pull-right[
+```{r, echo=FALSE, fig.width=5, fig.height=5}
+qrcode::qr_code(one_minute_paper) |> plot(col = c('#FAFAFA', 'black'))
+```
+]
+
+`r one_minute_paper`
