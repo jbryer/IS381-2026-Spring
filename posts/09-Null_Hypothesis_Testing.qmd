@@ -1,0 +1,16 @@
+---
+title: "Null Hypothesis Testing"
+date: 2026-03-23
+draft: false
+description: "Slides and recording for the *Null Hypothesis Testing* meetup."
+categories: ["Meetups"]
+image: "09-Null_Hypothesis_Testing.png"
+---
+
+
+[Click here](/slides/09-CLT_and_Boostrapping.html#1) to open the slides([PDF](/slides/09-CLT_and_Boostrapping.pdf)).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FtdXKppT_6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+

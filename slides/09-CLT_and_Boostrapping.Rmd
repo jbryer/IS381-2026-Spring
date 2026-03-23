@@ -2,7 +2,7 @@
 title: "Null Hypothesis Testing and Bootstrapping"
 subtitle: "IS381 - Statistics & Probability for Data Analytics"
 author: Jason Bryer, Ph.D.
-date: "October 20, 2025"
+date: "March 23, 2026"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
