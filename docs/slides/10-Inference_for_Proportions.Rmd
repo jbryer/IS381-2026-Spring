@@ -2,7 +2,7 @@
 title: "Inference for Proportions"
 subtitle: "IS381 - Statistics and Probability with R"
 author: Jason Bryer, Ph.D.
-date: "October 27, 2025"
+date: "March 30, 2026"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]

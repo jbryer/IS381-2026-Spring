@@ -1,0 +1,16 @@
+---
+title: "Inference for proportions"
+date: 2026-03-30
+draft: false
+description: "Slides and recording for the *Inference for proportions* meetup."
+categories: ["Meetups"]
+image: "10-Inference_for_proportions.png"
+---
+
+
+[Click here](/slides/10-Inference_for_Proportions.html#1) to open the slides([PDF](/slides/10-Inference_for_Proportions.pdf)).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hpgVln8Hvh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+

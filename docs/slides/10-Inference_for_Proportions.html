@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Inference for Proportions</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jason Bryer, Ph.D." />
+    <meta name="date" content="2026-03-30" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/mtheme_max.css" type="text/css" />
+    <link rel="stylesheet" href="assets/fonts_mtheme_max.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: center, middle, inverse, title-slide
+
+# Inference for Proportions
+## IS381 - Statistics and Probability with R
+### Jason Bryer, Ph.D.
+### March 30, 2026
+
+---
+# One Minute Paper Results
+
+
+
+.pull-left[
+**What was the most important thing you learned during this class?**
+&lt;img src="10-Inference_for_Proportions_files/figure-html/unnamed-chunk-2-1.png" alt="" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+**What important question remains unanswered for you?**
+&lt;img src="10-Inference_for_Proportions_files/figure-html/unnamed-chunk-3-1.png" alt="" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+# Example
+
+Two scientists want to know if a certain drug is effective against high blood pressure. The first scientist wants to give the drug to 1,000 people with high blood pressure and see how many of them experience lower blood pressure levels. The second scientist wants to give the drug to 500 people with high blood pressure, and not give the drug to another 500 people with high blood pressure, and see how many in both groups experience lower blood pressure levels. Which is the better way to test this drug?
+
+&gt;- **500 get the drug, 500 don't**
+
+---
+# Survey of Americans
+
+The GSS asks the same question, below is the distribution of responses from the 2010 survey:
+
+Response                   | n
+---------------------------|------
+All 1000 get the drug      | 99 
+500 get the drug 500 don't | 571
+**Total**                  | **670**
+
+---
+# Parameter of Interest
+
+* Parameter of interest: Proportion of *all* Americans who have good intuition about experimental design.  
+`$$p(population\; proportion)$$`
+
+* Point estimate: Proportion of *sampled* Americans who have good
+intuition about experimental design.  
+`$$\hat{p}(sample\; proportion)$$`
+
+---
+# Inference for a proportion
+
+What percent of all Americans have good intuition about experimental design (i.e. would answer "500 get the drug 500 don't?"
+
+* Using a confidence interval
+`$$point\; estimate \pm ME$$`
+
+* We know that ME = critical value x standard error of the point estimate.
+`$$SE_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}$$`
+
+---
+# Central limit theoreom for proportions
+
+Sample proportions will be nearly normally distributed with mean equal to the population mean, *p*, and standard error equal to `\(\sqrt{\frac{p(1-p)}{n}}\)`.
+
+$$\hat { p } \sim N\left( mean=p,SE=\sqrt { \frac { p(1-p) }{ n }  }  \right) $$
+
+This is true given the following conditions:
+
+* independent observations
+* at least 10 successes and 10 failures
+
+---
+class: font80
+# Simulating the CLT
+
+.pull-left[
+Let's consider a population of 1,000,000 where the true proportion is 0.85.
+
+
+``` r
+pop_prop &lt;- 0.85
+N &lt;- 1000000
+pop &lt;- c(rep(0, N * (1 - pop_prop)), 
+		 rep(1, N * pop_prop))
+```
+
+We can estimate the sampling distribution by taking 1,000 random samples of size 30.
+
+
+``` r
+n &lt;- 670
+samp_dist &lt;- numeric(1000)
+for(i in 1:length(samp_dist)) {
+	samp_dist[i] &lt;- sample(pop, size = n) |&gt; mean()
+}
+```
+
+Calculate the standard error using one sample.
+
+
+``` r
+samp_se &lt;- sqrt((0.85 * (1 - 0.85)) / 670)
+```
+
+
+]
+.pull-right[
+
+The figure represents the sampling distribution. The blue line is from the estimated sampling distribution. The green line is from the one sample (i.e using the SE formula).
+
+&lt;img src="10-Inference_for_Proportions_files/figure-html/unnamed-chunk-7-1.png" alt="" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+---
+# Back to the Survey
+
+* 571 out of 670 (85%) of Americans answered the question on experimental design correctly.
+* Estimate (using a 95% confidence interval) the proportion of all Americans who have good intuition about experimental design?
+
+Given: `\(n = 670\)`, `\(\hat{p} = 0.85\)`.
+
+Conditions:
+
+1. Independence: The sample is random, and 670 &lt; 10% of all Americans, therefore we can assume that one respondent's response is independent of another.
+
+2. Success-failure: 571 people answered correctly (successes) and 99 answered incorrectly (failures), both are greater than 10.
+
+---
+# Calculating Confidence Interval
+
+Given: `\(n = 670\)`, `\(\hat{p} = 0.85\)`.
+
+`$$0.85 \pm 1.96 \sqrt{\frac{0.85 \times 0.15}{670}} = \left(0.82,\; 0.88\right)$$`
+
+We are 95% confidence the true proportion of Americans that have a good intuition about experimental designs is betwee 82% and 88%.
+
+---
+# How many should we sample?
+
+Suppose you want a 3% margin of error, how many people would you have to survey?
+
+Use `\(\hat{p} = 0.5\)`
+
+* If you don't know any better, 50-50 is a good guess
+* `\(\hat{p} = 0.5\)` gives the most conservative estimate - highest possible sample size
+
+`$$0.03 = 1.96 \times \sqrt{\frac{0.5 \times 0.5}{n}}$$`
+`$$0.03^2 = 1.96^2 \times \frac{0.5 \times 0.5}{n}$$`
+`$$n \approx 1,068$$`
+
+---
+class: font90
+# Choosing a sample size
+
+How many people should you sample in order to cut the margin of error of a 95% confidence interval down to 1%?
+
+`$$ME = z^* × SE$$`
+
+Using `\(\hat{p}\)` from previous slides.
+
+$$0.01 \ge 1.96 \times \sqrt{\frac{0.85 \times 0.15}{n}} $$
+
+`$$0.01^2 \ge 1.96^2 \times \frac{0.85 \times 0.15}{n}$$`
+`$$n \ge \frac{1.96^2 \times 0.85 \times 0.15}{0.01^2}$$`
+
+`$$n \ge 4,898.04$$`
+*n* needs to be at least 4,899 to have a 1% margin of error.
+
+
+---
+# Example: Two Proportions
+
+Scientists predict that global warming may have big effects on the polar regions within the next 100 years. One of the possible effects is that the northern ice cap may completely melt. Would this bother you a great deal, some, a little, or not at all if it actually happened?
+
+Response     | GSS | Duke
+-------------|----:|-----:
+A great deal | 454 |  69
+Some         | 124 |  40
+A little     |  52 |   4
+Not at all   |  50 |   2
+Total        | 680 | 105
+
+---
+# Parameter and Point Estimate
+
+Parameter of interest: Difference between the proportions of *all* Duke students and *all* Americans who would be bothered a great deal by the northern ice cap completely melting.
+
+`$$p_{Duke} - p_{US}$$`
+
+Point estimate: Difference between the proportions of *sampled* Duke students and *sampled* Americans who would be bothered a great deal by the northern ice cap completely melting.
+
+`$$\hat{p}_{Duke} - \hat{p}_{US}$$`
+
+---
+# Everything else is the same...
+
+* CI: `\(point\; estimate \pm margin\; of\; error\)`
+* HT: `\(Z = \frac{point\; estimate - null\; value}{SE}\)`
+
+Standard error of the difference between two sample proportions
+
+`$$SE_{\hat{p}_1 - \hat{p}_2} = \sqrt{ \frac{p_1\left(1 - p_1\right)}{n_1} + \frac{p_2\left(1 - p_2\right)}{n_2} }$$`
+
+Conditions:
+
+1. Independence within groups: The US group is sampled randomly and we're assuming that the Duke group represents a random sample as well. `\(n_{Duke} &lt; 10\%\)` of all Duke students and `\(680 &lt; 10\%\)` of all Americans.
+2. Independence between groups: The sampled Duke students and the US residents are independent of each other.
+3. Success-failure: At least 10 observed successes and 10 observed failures in the two groups.
+
+---
+class: font80
+# 95% Confidence Interval
+
+Construct a 95% confidence interval for the difference between the proportions of Duke students and Americans who would be bothered a great deal by the melting of the northern ice cap ( `\(p_{Duke} - p_{US}\)` ).
+
+Data             |  Duke |  US
+-----------------|------:|-----:
+A great deal     |   69  | 454
+Not a great deal |   36  | 226
+Total            |  105  | 680
+`\(\hat{p}\)`        | 0.657 | 0.668
+
+`$$\left(\hat{p}_{Duke} - \hat{p}_{US}\right) \pm z* \times \sqrt{ \frac{p_{Duke}\left(1 - p_{Duke}\right)}{n_{Duke}} + \frac{p_{US}\left(1 - p_{US}\right)}{n_{US}} }$$`
+
+`$$(0.657 - 0.668) \pm 1.96 \times \sqrt{\frac{0.657 \times 0.343}{105} + \frac{0.668 \times 0.332}{680}} = \left(-0.108,\; 0.086\right)$$`
+
+---
+class: left, font140
+# One Minute Paper
+
+.pull-left[
+1. What was the most important thing you learned during this class?
+2. What important question remains unanswered for you?
+]
+.pull-right[
+&lt;img src="10-Inference_for_Proportions_files/figure-html/unnamed-chunk-8-1.png" alt="" style="display: block; margin: auto;" /&gt;
+]
+
+https://forms.gle/bz8GvYWfKdMggRv38
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "solarized-light",
+  "highlightLanguage": "R",
+  "highlightLines": true,
+  "countIncrementalSlides": false,
+  "ratio": "16:9",
+  "navigation": {
+    "scroll": false
+  }
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<!-- Source: https://www.garrickadenbuie.com/blog/xaringan-tip-logo-all-slides/ -->
+<style>
+.logo {
+  background-image: url(images/hex/DATA606.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 2em;
+  right: 0.5em;
+  width: 55px;
+  height: 64px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
