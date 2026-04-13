@@ -1,0 +1,16 @@
+---
+title: "Inference for two-way tables"
+date: 2026-04-13
+draft: false
+description: "Slides and recording for the *Inference for two-way tables* meetup."
+categories: ["Meetups"]
+image: "11-Inference_for_two-way_tables.png"
+---
+
+
+[Click here](/slides/11-Two_way_tables.html#1) to open the slides([PDF](/slides/11-Two_way_tables.pdf)).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qpm_PtsDho0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+

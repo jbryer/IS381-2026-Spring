@@ -13,83 +13,27 @@
     <lastmod>2026-01-16T21:00:39.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2026.is381.net/posts/09-Null_Hypothesis_Testing.html</loc>
-    <lastmod>2026-03-30T22:54:14.000Z</lastmod>
+    <loc>https://spring2026.is381.net/posts/10-Inference_for_proportions.html</loc>
+    <lastmod>2026-04-13T22:49:19.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2026.is381.net/posts/07-Distributions.html</loc>
-    <lastmod>2026-03-30T22:54:14.000Z</lastmod>
+    <loc>https://spring2026.is381.net/posts/08-Foundation_for_inference.html</loc>
+    <lastmod>2026-04-13T22:49:19.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2026.is381.net/posts/05-Reshaping_Data.html</loc>
-    <lastmod>2026-03-30T22:54:13.000Z</lastmod>
+    <loc>https://spring2026.is381.net/posts/06-Probability.html</loc>
+    <lastmod>2026-04-13T22:49:18.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2026.is381.net/posts/02-Intro_to_Data.html</loc>
-    <lastmod>2026-03-30T22:54:13.000Z</lastmod>
+    <loc>https://spring2026.is381.net/posts/03-Data_visualization_with_ggplot2.html</loc>
+    <lastmod>2026-04-13T22:49:18.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2026.is381.net/posts/00-Welcome.html</loc>
-    <lastmod>2026-01-16T21:00:58.000Z</lastmod>
+    <loc>https://spring2026.is381.net/posts/01-Intro_to_the_Course.html</loc>
+    <lastmod>2026-04-13T22:49:18.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2026.is381.net/modules/14-Module.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/modules/12-Module.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/modules/10-Module.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/modules/08-Module.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/modules/06-Module.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/modules/04-Module.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/modules/02-Module.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/instructor.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/index.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/modules/01-Module.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/modules/03-Module.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/modules/05-Module.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/modules/07-Module.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/modules/09-Module.html</loc>
-    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://spring2026.is381.net/modules/11-Module.html</loc>
+    <loc>https://spring2026.is381.net/modules/15-Module.html</loc>
     <lastmod>2026-01-16T21:00:39.000Z</lastmod>
   </url>
   <url>
@@ -97,32 +41,92 @@
     <lastmod>2026-01-16T21:00:39.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2026.is381.net/modules/15-Module.html</loc>
+    <loc>https://spring2026.is381.net/modules/11-Module.html</loc>
     <lastmod>2026-01-16T21:00:39.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2026.is381.net/posts/01-Intro_to_the_Course.html</loc>
-    <lastmod>2026-03-30T22:54:13.000Z</lastmod>
+    <loc>https://spring2026.is381.net/modules/09-Module.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2026.is381.net/posts/03-Data_visualization_with_ggplot2.html</loc>
-    <lastmod>2026-03-30T22:54:13.000Z</lastmod>
+    <loc>https://spring2026.is381.net/modules/07-Module.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2026.is381.net/posts/06-Probability.html</loc>
-    <lastmod>2026-03-30T22:54:13.000Z</lastmod>
+    <loc>https://spring2026.is381.net/modules/05-Module.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2026.is381.net/posts/08-Foundation_for_inference.html</loc>
-    <lastmod>2026-03-30T22:54:14.000Z</lastmod>
+    <loc>https://spring2026.is381.net/modules/03-Module.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2026.is381.net/posts/10-Inference_for_proportions.html</loc>
-    <lastmod>2026-03-30T22:54:14.000Z</lastmod>
+    <loc>https://spring2026.is381.net/modules/01-Module.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/index.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/instructor.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/modules/02-Module.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/modules/04-Module.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/modules/06-Module.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/modules/08-Module.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/modules/10-Module.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/modules/12-Module.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/modules/14-Module.html</loc>
+    <lastmod>2026-01-16T21:00:39.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/posts/00-Welcome.html</loc>
+    <lastmod>2026-01-16T21:00:58.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/posts/02-Intro_to_Data.html</loc>
+    <lastmod>2026-04-13T22:49:18.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/posts/05-Reshaping_Data.html</loc>
+    <lastmod>2026-04-13T22:49:18.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/posts/07-Distributions.html</loc>
+    <lastmod>2026-04-13T22:49:18.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/posts/09-Null_Hypothesis_Testing.html</loc>
+    <lastmod>2026-04-13T22:49:19.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2026.is381.net/posts/11-Inference_for_two-way_tables.html</loc>
+    <lastmod>2026-04-13T22:49:19.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2026.is381.net/schedule.html</loc>
-    <lastmod>2026-03-30T22:54:11.000Z</lastmod>
+    <lastmod>2026-04-13T22:49:16.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2026.is381.net/syllabus.html</loc>
