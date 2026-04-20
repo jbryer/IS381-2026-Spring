@@ -1,0 +1,16 @@
+---
+title: "Inference for numerical data"
+date: 2026-04-20
+draft: false
+description: "Slides and recording for the *Inference for numerical data* meetup."
+categories: ["Meetups"]
+image: "12-Inference_for_numerical_data.png"
+---
+
+
+[Click here](/slides/12-Inference_for_Numerical_Data.html#1) to open the slides([PDF](/slides/12-Inference_for_Numerical_Data.pdf)).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xbRjqWvlGGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+

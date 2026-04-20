@@ -2,7 +2,7 @@
 title: "Inference for Numerical Data"
 subtitle: "IS381 - Statistics and Probability with R"
 author: Jason Bryer, Ph.D.
-date: "November 10, 2025"
+date: "April 20, 2026"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]
