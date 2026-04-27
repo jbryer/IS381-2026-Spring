@@ -10,3 +10,4 @@ Meetups/
 /.quarto/
 
 **/*.quarto_ipynb
+.positai

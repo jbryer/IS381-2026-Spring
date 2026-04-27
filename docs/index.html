@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Announcements – IS381 Statistics and Probability with R</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -34,19 +37,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5e2a67271ee5063523c4641f127d36ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-250a19444ffc91d84a2587453de02c21.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-5e2a67271ee5063523c4641f127d36ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9ccd1f3250f77f6ff3eb633de0e056e9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-12b268dac006170a550a31a03a39bb4a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9ccd1f3250f77f6ff3eb633de0e056e9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -105,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -136,7 +138,7 @@ window.Quarto = {
 
 <meta property="og:title" content="Announcements – IS381 Statistics and Probability with R">
 <meta property="og:description" content="CUNY School of Professional Studies">
-<meta property="og:image" content="https://spring2026.is381.net/posts/12-Inference_for_numerical_data.png">
+<meta property="og:image" content="https://spring2026.is381.net/posts/13-Analysis_of_variance.png">
 <meta property="og:site_name" content="IS381 Statistics and Probability with R">
 <meta property="og:image:height" content="720">
 <meta property="og:image:width" content="1280">
@@ -550,7 +552,29 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TWVldHVwcw==" data-listing-date-sort="1776657600000" data-listing-file-modified-sort="1776726339000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="quarto-post image-right" data-index="0" data-categories="TWVldHVwcw==" data-listing-date-sort="1777262400000" data-listing-file-modified-sort="1777331139000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="thumbnail"><a href="./posts/13-Analysis_of_variance.html" class="no-external">
+
+<img loading="lazy" src="./posts/13-Analysis_of_variance.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/13-Analysis_of_variance.html" class="no-external">Analysis of variance</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/13-Analysis_of_variance.html" class="no-external">
+<p>Slides and recording for the <em>Analysis of variance</em> meetup.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/13-Analysis_of_variance.html" class="no-external">
+<div class="listing-date">
+Apr 27, 2026
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="TWVldHVwcw==" data-listing-date-sort="1776657600000" data-listing-file-modified-sort="1777331139000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail"><a href="./posts/12-Inference_for_numerical_data.html" class="no-external">
 
 <img loading="lazy" src="./posts/12-Inference_for_numerical_data.png" class="thumbnail-image">
@@ -572,7 +596,7 @@ Apr 20, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="TWVldHVwcw==" data-listing-date-sort="1776052800000" data-listing-file-modified-sort="1776726339000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="quarto-post image-right" data-index="2" data-categories="TWVldHVwcw==" data-listing-date-sort="1776052800000" data-listing-file-modified-sort="1777331139000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail"><a href="./posts/11-Inference_for_two-way_tables.html" class="no-external">
 
 <img loading="lazy" src="./posts/11-Inference_for_two-way_tables.png" class="thumbnail-image">
@@ -594,7 +618,7 @@ Apr 13, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="TWVldHVwcw==" data-listing-date-sort="1774843200000" data-listing-file-modified-sort="1776726339000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="quarto-post image-right" data-index="3" data-categories="TWVldHVwcw==" data-listing-date-sort="1774843200000" data-listing-file-modified-sort="1777331139000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail"><a href="./posts/10-Inference_for_proportions.html" class="no-external">
 
 <img loading="lazy" src="./posts/10-Inference_for_proportions.png" class="thumbnail-image">
@@ -616,7 +640,7 @@ Mar 30, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="TWVldHVwcw==" data-listing-date-sort="1774238400000" data-listing-file-modified-sort="1776726339000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="quarto-post image-right" data-index="4" data-categories="TWVldHVwcw==" data-listing-date-sort="1774238400000" data-listing-file-modified-sort="1777331139000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail"><a href="./posts/09-Null_Hypothesis_Testing.html" class="no-external">
 
 <img loading="lazy" src="./posts/09-Null_Hypothesis_Testing.png" class="thumbnail-image">
@@ -638,7 +662,7 @@ Mar 23, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="TWVldHVwcw==" data-listing-date-sort="1773633600000" data-listing-file-modified-sort="1776726339000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="quarto-post image-right" data-index="5" data-categories="TWVldHVwcw==" data-listing-date-sort="1773633600000" data-listing-file-modified-sort="1777331139000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail"><a href="./posts/08-Foundation_for_inference.html" class="no-external">
 
 <img loading="lazy" src="./posts/08-Foundation_for_inference.png" class="thumbnail-image">
@@ -660,7 +684,7 @@ Mar 16, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="TWVldHVwcw==" data-listing-date-sort="1773028800000" data-listing-file-modified-sort="1776726339000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="quarto-post image-right" data-index="6" data-categories="TWVldHVwcw==" data-listing-date-sort="1773028800000" data-listing-file-modified-sort="1777331139000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail"><a href="./posts/07-Distributions.html" class="no-external">
 
 <img loading="lazy" src="./posts/07-Distributions.png" class="thumbnail-image">
@@ -682,7 +706,7 @@ Mar 9, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="TWVldHVwcw==" data-listing-date-sort="1772427600000" data-listing-file-modified-sort="1776726338000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="quarto-post image-right" data-index="7" data-categories="TWVldHVwcw==" data-listing-date-sort="1772427600000" data-listing-file-modified-sort="1777331138000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail"><a href="./posts/06-Probability.html" class="no-external">
 
 <img loading="lazy" src="./posts/06-Probability.png" class="thumbnail-image">
@@ -704,7 +728,7 @@ Mar 2, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="TWVldHVwcw==" data-listing-date-sort="1771822800000" data-listing-file-modified-sort="1776726338000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="quarto-post image-right" data-index="8" data-categories="TWVldHVwcw==" data-listing-date-sort="1771822800000" data-listing-file-modified-sort="1777331138000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail"><a href="./posts/05-Reshaping_Data.html" class="no-external">
 
 <img loading="lazy" src="./posts/05-Reshaping_Data.png" class="thumbnail-image">
@@ -726,7 +750,7 @@ Feb 23, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="TWVldHVwcw==" data-listing-date-sort="1770613200000" data-listing-file-modified-sort="1776726338000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="quarto-post image-right" data-index="9" data-categories="TWVldHVwcw==" data-listing-date-sort="1770613200000" data-listing-file-modified-sort="1777331138000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail"><a href="./posts/03-Data_visualization_with_ggplot2.html" class="no-external">
 
 <img loading="lazy" src="./posts/03-Data_visualization_with_ggplot2.png" class="thumbnail-image">
@@ -748,7 +772,7 @@ Feb 9, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="TWVldHVwcw==" data-listing-date-sort="1770008400000" data-listing-file-modified-sort="1776726338000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="quarto-post image-right" data-index="10" data-categories="TWVldHVwcw==" data-listing-date-sort="1770008400000" data-listing-file-modified-sort="1777331138000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail"><a href="./posts/02-Intro_to_Data.html" class="no-external">
 
 <img loading="lazy" src="./posts/02-Intro_to_Data.png" class="thumbnail-image">
@@ -770,7 +794,7 @@ Feb 2, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="TWVldHVwcw==" data-listing-date-sort="1769403600000" data-listing-file-modified-sort="1776726338000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="quarto-post image-right" data-index="11" data-categories="TWVldHVwcw==" data-listing-date-sort="1769403600000" data-listing-file-modified-sort="1777331138000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
 <div class="thumbnail"><a href="./posts/01-Intro_to_the_Course.html" class="no-external">
 
 <img loading="lazy" src="./posts/01-Intro_to_the_Course.png" class="thumbnail-image">
@@ -792,7 +816,7 @@ Jan 26, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1768453200000" data-listing-file-modified-sort="1768597258000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="155">
+<div class="quarto-post image-right" data-index="12" data-listing-date-sort="1768453200000" data-listing-file-modified-sort="1768597258000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="155">
 <div class="thumbnail"><a href="./posts/00-Welcome.html" class="no-external">
 
 <img loading="lazy" src="./posts/00-welcome.png" class="thumbnail-image">
