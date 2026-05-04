@@ -1,0 +1,16 @@
+---
+title: "Correlation"
+date: 2026-05-04
+draft: false
+description: "Slides and recording for the *Correlation* meetup."
+categories: ["Meetups"]
+image: "14-Correlation.png"
+---
+
+
+[Click here](/slides/14-Correlation.html#1) to open the slides([PDF](/slides/14-Correlation.pdf)).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Cc4KiDL76YI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+

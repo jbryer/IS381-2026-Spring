@@ -2,7 +2,7 @@
 title: "Correlation"
 subtitle: "IS381 - Statistics and Probability with R"
 author: Jason Bryer, Ph.D.
-date: "December 1, 2025"
+date: "May 4, 2026"
 output:
   xaringan::moon_reader:
     css: ["assets/mtheme_max.css", "assets/fonts_mtheme_max.css"]

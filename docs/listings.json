@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/14-Correlation.html",
       "/posts/13-Analysis_of_variance.html",
       "/posts/12-Inference_for_numerical_data.html",
       "/posts/11-Inference_for_two-way_tables.html",
